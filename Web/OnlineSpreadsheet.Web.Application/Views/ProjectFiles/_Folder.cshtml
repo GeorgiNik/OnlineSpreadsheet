@@ -1,0 +1,14 @@
+﻿@model OnlineSpreadsheet.Web.ViewModels.ProjectFiles.FolderVM
+<div class="modal-body">
+    <div id="validation-result"></div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name, new { @class = "control-label col-md-4" })
+        <div class="col-md-8">
+            @Html.EditorFor(m => m.Name)
+            @Html.ValidationMessageFor(m => m.Name)
+        </div>
+    </div>
+    <hr class="delimiter" />
+    <button type="submit" id="btn-save" class="btn btn-primary">@Resources.Save.ToUpper()</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">@Resources.Discard</button>
+</div>

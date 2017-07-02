@@ -1,0 +1,60 @@
+﻿@model OnlineSpreadsheet.Web.ViewModels.ProjectFiles.UploadFilesVM
+
+@Scripts.Render("~/bundles/dataFilesUpload")
+@Scripts.Render("~/bundles/dataFilesError")
+
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>@Resources.UploadFiles</h3>
+        </div>
+
+        <div class="row no-margin">
+            <div class="col-md-12">
+                <div class="alert alert-danger" id="validation-sum">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-body">
+            <div class="form-group row">
+                @Html.LabelFor(m => m.FolderID, new { @class = "control-label col-md-4" })
+
+                <div class="col-md-8">
+                    @(Html.Kendo().DropDownListFor(m => m.FolderID)
+                        .OptionLabel(" ")
+                        .DataTextField("Name")
+                        .DataValueField("ID")
+                        .DataSource(source =>
+                        {
+                            source.Read(read =>
+                            {
+                                read.Action("Folders", "Dropdowns");
+                            });
+                        })
+                        .AutoBind(true)
+                    )
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-12">
+                    @(Html.Kendo()
+                        .Upload()
+                        .Name("files")
+                        .Async(a => a
+                            .Save("Upload", "ProjectFiles")
+                            .Remove("Remove", "ProjectFiles")
+                            .AutoUpload(true))
+                        .Events(x => x
+                            .Upload("onUpload")
+                            .Error("fileUploadFail"))
+                    )
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" data-dismiss="modal">@Resources.Close</button>
+        </div>
+
+        @Scripts.Render(Bundles.ModalValidation)
+    </div>
+</div>
