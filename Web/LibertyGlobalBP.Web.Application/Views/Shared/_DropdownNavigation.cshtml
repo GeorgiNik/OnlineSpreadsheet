@@ -1,0 +1,47 @@
+﻿@if (ViewBag.User.HasAccess(AccessRequest.CountryScorecardRead))
+{
+    <div class="dropdown">
+        <a href="/CountryScorecard/Index" class="btn btn-default dropdown-toggle" type="button" id="country-scorecard">
+            @Resources.CountryScorecard
+        </a>
+    </div>
+}
+@if (ViewBag.User.HasAccess(AccessRequest.ProjectFilesRead))
+{
+    <div class="dropdown">
+        <a href="/ProjectFiles/Index" class="btn btn-default dropdown-toggle" type="button" id="project-files">
+            @Resources.ProjectFiles
+        </a>
+    </div>
+}
+@if (ViewBag.User.HasAccess(AccessRequest.ConfigurationRead) )
+{
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="admin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            @Resources.Configuration
+            <i class="fa fa-chevron-down"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="admin">
+            @if (ViewBag.User.HasAccess(AccessRequest.UsersRead))
+            {
+                <li>
+                    <a href="/Users/Index">@Resources.ManageUsers</a>
+                </li>
+            }
+            @if (ViewBag.User.HasAccess(AccessRequest.DataRead))
+            {
+                <li>
+                    <a href="/Data/Index">@Resources.ManageData</a>
+                </li>
+            }
+            @if (ViewBag.User.HasAccess(AccessRequest.BrandsRead) ||
+                ViewBag.User.HasAccess(AccessRequest.UserRolesRead) ||
+                ViewBag.User.HasAccess(AccessRequest.CountriesRead) )
+            {
+                <li>
+                    <a href="/Home/Admin">@Resources.SystemConfiguration</a>
+                </li>
+            }
+        </ul>
+    </div>
+}

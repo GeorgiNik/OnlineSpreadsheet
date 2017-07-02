@@ -1,0 +1,22 @@
+﻿@using LibertyGlobalBP.Localization.Resources
+@model LibertyGlobalBP.Web.ViewModels.UserRoles.UserRoleVM
+
+<div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <div class="modal-header">@Resources.Edit</div>
+        @using (Ajax.BeginForm("Edit", "UserRoles",
+            new { },
+            new AjaxOptions
+            {
+                HttpMethod = "POST",
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "validation-result"
+            },
+            new { @class = "form-horizontal", id = "generic-form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(false, string.Empty, new { @class = "text-danger" })
+            @Html.Partial("_UserRole", Model)
+        }
+    </div>
+</div>

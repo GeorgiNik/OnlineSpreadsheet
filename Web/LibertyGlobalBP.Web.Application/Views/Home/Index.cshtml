@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="home-title">
+    @Resources.HomeTitle
+</div>
+
+<br />
+
+<div class="home-subtitle">
+    @Resources.HomeSubtitle
+</div>
+
+<br />
+
+<div class="home-panel" ng-controller="homeController as vm" ng-init="vm.init()" ng-show="vm.charts.highMap != null || vm.charts.scores != null || vm.charts.linePoint != null">
+    <div class="row">
+        <div class="pull-left dropdown-filter-wide">
+            <select kendo-drop-down-list
+                    k-data-text-field="'Name'"
+                    k-data-value-field="'ID'"
+                    k-data-source="vm.npsTypeDataSource"
+                    k-value="vm.selectedFilters.npsTypeID"
+                    ng-model="vm.selectedFilters.npsTypeID"
+                    class="full-width"></select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 high-map-container" ng-show="vm.charts.highMap != null">
+            <div class="scores-title">
+                @Resources.NPSRanking
+            </div>
+
+            <br />
+
+            <high-map options="vm.charts.highMap" country="vm.charts.country" dictionary="vm.charts.dictionary" />
+        </div>
+
+        <div class="col-md-6"
+             ng-if="vm.charts.country == null"
+             ng-show="vm.charts.scores != null">
+            <div>
+                <scores options="vm.charts.scores" />
+            </div>
+        </div>
+        <div class="col-md-6 full-height"
+             ng-if="vm.charts.country != null"
+             ng-show="vm.charts.linePoint != null">
+            <div class="scores-title">
+                @Resources.NPSPerformance
+            </div>
+
+            <br />
+
+            <line-point-chart options="vm.charts.linePoint" />
+        </div>
+    </div>
+</div>

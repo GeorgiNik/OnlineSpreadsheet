@@ -1,0 +1,18 @@
+﻿@model string
+@(
+    Html.Kendo().DropDownList()
+    .Name("CountriesEdit")
+    .DataTextField("Name")
+    .DataValueField("ID")
+    .OptionLabel("All")
+    .Value(Model)
+    .DataSource(source =>
+    {
+        source.Read(read =>
+        {
+            read.Action("Countries", "Dropdowns");
+        });
+    })
+    .HtmlAttributes(new { style = "width:100%" })
+    .Events(events => events.Change("onContentChange"))
+)

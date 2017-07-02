@@ -1,0 +1,2331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abbreviation" xml:space="preserve">
+    <value>Abbreviation</value>
+  </data>
+  <data name="ActionManager" xml:space="preserve">
+    <value>Action Manager</value>
+  </data>
+  <data name="ActionProgress" xml:space="preserve">
+    <value>Action Progress</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddBrand" xml:space="preserve">
+    <value>Add a new brand</value>
+  </data>
+  <data name="AddBusinessLine" xml:space="preserve">
+    <value>Add a new business line</value>
+  </data>
+  <data name="AddCountry" xml:space="preserve">
+    <value>Add a new country</value>
+  </data>
+  <data name="AddLanguage" xml:space="preserve">
+    <value>Add a new language</value>
+  </data>
+  <data name="CreateQuestion" xml:space="preserve">
+    <value>Create a new question</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Add a new user</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="BothTranslationsMustHaveTitle" xml:space="preserve">
+    <value>Both translations must have a title</value>
+  </data>
+  <data name="Brands" xml:space="preserve">
+    <value>Brands</value>
+  </data>
+  <data name="BusinessLines" xml:space="preserve">
+    <value>Business Lines</value>
+  </data>
+  <data name="Countries" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CountryExists" xml:space="preserve">
+    <value>Country already exists</value>
+  </data>
+  <data name="CurrentProgress" xml:space="preserve">
+    <value>Current Progress</value>
+  </data>
+  <data name="CustomerJourney" xml:space="preserve">
+    <value>Customer Journey</value>
+  </data>
+  <data name="CustomerPortal" xml:space="preserve">
+    <value>Customer Portal</value>
+  </data>
+  <data name="Customers" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="DelegationRequests" xml:space="preserve">
+    <value>Delegation Requests</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>Are you sure you want to delete </value>
+  </data>
+  <data name="Discard" xml:space="preserve">
+    <value>Discard</value>
+  </data>
+  <data name="DriverQuestion" xml:space="preserve">
+    <value>Driver Question</value>
+  </data>
+  <data name="DriverResults" xml:space="preserve">
+    <value>Driver Results</value>
+  </data>
+  <data name="EffortQuestion" xml:space="preserve">
+    <value>Effort Question</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailBodies" xml:space="preserve">
+    <value>Email Bodies</value>
+  </data>
+  <data name="Engine" xml:space="preserve">
+    <value>Engine</value>
+  </data>
+  <data name="FeedbackCallAssignment" xml:space="preserve">
+    <value>Feedback Call Assignment</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>Invalid token</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LanguageExists" xml:space="preserve">
+    <value>Language already exists</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="LogOff" xml:space="preserve">
+    <value>Logoff</value>
+  </data>
+  <data name="ManageTranslations" xml:space="preserve">
+    <value>Manage Translations</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NpsQuestion" xml:space="preserve">
+    <value>NPS Question</value>
+  </data>
+  <data name="NpsResults" xml:space="preserve">
+    <value>NPS Results</value>
+  </data>
+  <data name="OpenEndedQuestion" xml:space="preserve">
+    <value>Open Ended Question</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Overview for</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="QuestionExists" xml:space="preserve">
+    <value>Question already exists</value>
+  </data>
+  <data name="QuestionMustHaveTitle" xml:space="preserve">
+    <value>Question must have title</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Questions</value>
+  </data>
+  <data name="QuestionType" xml:space="preserve">
+    <value>Question Type</value>
+  </data>
+  <data name="SatisfactionQuestion" xml:space="preserve">
+    <value>Satisfaction Question</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SurveyBuilder" xml:space="preserve">
+    <value>Survey builder</value>
+  </data>
+  <data name="SurveyEngine" xml:space="preserve">
+    <value>Survey Engine</value>
+  </data>
+  <data name="Surveys" xml:space="preserve">
+    <value>Surveys</value>
+  </data>
+  <data name="SurveyType" xml:space="preserve">
+    <value>Survey Type</value>
+  </data>
+  <data name="SystemConfiguration" xml:space="preserve">
+    <value>System Configuration</value>
+  </data>
+  <data name="TextAnalytics" xml:space="preserve">
+    <value>Text Analytics</value>
+  </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>Transactions</value>
+  </data>
+  <data name="Translate" xml:space="preserve">
+    <value>Translate</value>
+  </data>
+  <data name="UserDoesntExist" xml:space="preserve">
+    <value>User does not exist</value>
+  </data>
+  <data name="UserExists" xml:space="preserve">
+    <value>User already exists</value>
+  </data>
+  <data name="UserRoles" xml:space="preserve">
+    <value>User Roles</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="Workflow" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="BrandExists" xml:space="preserve">
+    <value>Brand already exists</value>
+  </data>
+  <data name="AddQuestionnaire" xml:space="preserve">
+    <value>Add a new questionnaire</value>
+  </data>
+  <data name="Questionnaires" xml:space="preserve">
+    <value>Questionnaires</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="QuestionLibrary" xml:space="preserve">
+    <value>Question Library</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="BusinessLine" xml:space="preserve">
+    <value>Business Line</value>
+  </data>
+  <data name="DomainExtensions" xml:space="preserve">
+    <value>Domain Extensions</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="SourceEmail" xml:space="preserve">
+    <value>Source Email</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="ChangeYourPassword" xml:space="preserve">
+    <value>Change your account password</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Email is required</value>
+  </data>
+  <data name="ManageAccountSettings" xml:space="preserve">
+    <value>Manage your account settings</value>
+  </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>Name is required</value>
+  </data>
+  <data name="QuestionTypeRequired" xml:space="preserve">
+    <value>Question type is required</value>
+  </data>
+  <data name="StateRequired" xml:space="preserve">
+    <value>State is required</value>
+  </data>
+  <data name="StatusRequired" xml:space="preserve">
+    <value>Status is required</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Role in organization</value>
+  </data>
+  <data name="WorkflowRequired" xml:space="preserve">
+    <value>Workflow is required</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ClearFilter" xml:space="preserve">
+    <value>Clear filter</value>
+  </data>
+  <data name="ClearFilters" xml:space="preserve">
+    <value>Clear filters</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Current password</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="PasswordsDontMatch" xml:space="preserve">
+    <value>The new password and confirmation passwords do not match</value>
+  </data>
+  <data name="CantBeOwnManager" xml:space="preserve">
+    <value>You cannot be your own manager</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="AddBctc" xml:space="preserve">
+    <value>Add a new BCTC</value>
+  </data>
+  <data name="Assignment" xml:space="preserve">
+    <value>Assignment</value>
+  </data>
+  <data name="ManageAssignments" xml:space="preserve">
+    <value>Manage assignments</value>
+  </data>
+  <data name="AddAssignment" xml:space="preserve">
+    <value>Add new assignment</value>
+  </data>
+  <data name="AbbreviationRequired" xml:space="preserve">
+    <value>Abbreviation is required</value>
+  </data>
+  <data name="FlagRequired" xml:space="preserve">
+    <value>Flag is required</value>
+  </data>
+  <data name="NpsConfiguration" xml:space="preserve">
+    <value>NPS Configuration</value>
+  </data>
+  <data name="DifferentNumberOfAnswers" xml:space="preserve">
+    <value>Different number of answers for the translations</value>
+  </data>
+  <data name="Relationship" xml:space="preserve">
+    <value>Relationship</value>
+  </data>
+  <data name="Transactional" xml:space="preserve">
+    <value>Transactional</value>
+  </data>
+  <data name="ManageBusinessLines" xml:space="preserve">
+    <value>Manage business lines</value>
+  </data>
+  <data name="ManageCountries" xml:space="preserve">
+    <value>Manage countries</value>
+  </data>
+  <data name="ManageLanguages" xml:space="preserve">
+    <value>Manage languages</value>
+  </data>
+  <data name="ManageUsers" xml:space="preserve">
+    <value>Manage users</value>
+  </data>
+  <data name="BusinessLineExists" xml:space="preserve">
+    <value>Business line already exists</value>
+  </data>
+  <data name="ManageDomainExtensions" xml:space="preserve">
+    <value>Manage domain extensions</value>
+  </data>
+  <data name="AddAnswer" xml:space="preserve">
+    <value>Add answer</value>
+  </data>
+  <data name="AddDomainExtension" xml:space="preserve">
+    <value>Add domain extension</value>
+  </data>
+  <data name="BrandLogoRequired" xml:space="preserve">
+    <value>Brand logo is required</value>
+  </data>
+  <data name="BrandNameRequired" xml:space="preserve">
+    <value>Brand name is required</value>
+  </data>
+  <data name="DomainExtensionRequired" xml:space="preserve">
+    <value>Domain extension is required</value>
+  </data>
+  <data name="ManageBrands" xml:space="preserve">
+    <value>Manage brands</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="UseInSurvey" xml:space="preserve">
+    <value>Use in survey</value>
+  </data>
+  <data name="LanguagesCovered" xml:space="preserve">
+    <value>Languages covered</value>
+  </data>
+  <data name="QuestionsBank" xml:space="preserve">
+    <value>Questions Bank</value>
+  </data>
+  <data name="InvalidLoginAttempt" xml:space="preserve">
+    <value>Invalid email and/or password</value>
+  </data>
+  <data name="InvalidLoginEmail" xml:space="preserve">
+    <value>Please enter a valid email address</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordMinLength" xml:space="preserve">
+    <value>Password must be at least 6 characters long</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="SetPassword" xml:space="preserve">
+    <value>Set password</value>
+  </data>
+  <data name="SetYourNewPassword" xml:space="preserve">
+    <value>Set your new password</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Translations</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="RelationshipNpsAccess" xml:space="preserve">
+    <value>Relationship NPS Access</value>
+  </data>
+  <data name="TransactionalNpsAccess" xml:space="preserve">
+    <value>Transactional NPS Access</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="MultipleDeleteConfirmation" xml:space="preserve">
+    <value>Are you sure you want to delete the selected rows?</value>
+  </data>
+  <data name="DeleteSelection" xml:space="preserve">
+    <value>Delete selection</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Invalid email address</value>
+  </data>
+  <data name="BusinessLineRequired" xml:space="preserve">
+    <value>Business line is required</value>
+  </data>
+  <data name="ContactRequired" xml:space="preserve">
+    <value>Contact is required</value>
+  </data>
+  <data name="CountryRequired" xml:space="preserve">
+    <value>Country is required</value>
+  </data>
+  <data name="CustomerExists" xml:space="preserve">
+    <value>Customer already exists</value>
+  </data>
+  <data name="CustomerGlobalName" xml:space="preserve">
+    <value>Customer global name</value>
+  </data>
+  <data name="CustomerLocalName" xml:space="preserve">
+    <value>Customer local name</value>
+  </data>
+  <data name="CustomerRequired" xml:space="preserve">
+    <value>Customer is required</value>
+  </data>
+  <data name="CustomerSiteName" xml:space="preserve">
+    <value>Customer CNP</value>
+  </data>
+  <data name="GlobalBrandRequired" xml:space="preserve">
+    <value>Global brand is required</value>
+  </data>
+  <data name="IncludedInRel" xml:space="preserve">
+    <value>Included in Relational NPS</value>
+  </data>
+  <data name="IncludedInTra" xml:space="preserve">
+    <value>Included in Transactional NPS</value>
+  </data>
+  <data name="Internal" xml:space="preserve">
+    <value>Internal</value>
+  </data>
+  <data name="LargeCustomer" xml:space="preserve">
+    <value>Large customer</value>
+  </data>
+  <data name="LocalBrandRequired" xml:space="preserve">
+    <value>Local brand is required</value>
+  </data>
+  <data name="ManagerRequired" xml:space="preserve">
+    <value>Manager is required</value>
+  </data>
+  <data name="PhoneRequired" xml:space="preserve">
+    <value>Phone is required</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="Salutation" xml:space="preserve">
+    <value>Salutation</value>
+  </data>
+  <data name="SAP_ID" xml:space="preserve">
+    <value>SAP ID</value>
+  </data>
+  <data name="Touchpoint" xml:space="preserve">
+    <value>Touchpoint</value>
+  </data>
+  <data name="TouchpointTypeRequired" xml:space="preserve">
+    <value>Touchpoint type is required</value>
+  </data>
+  <data name="Volume" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="VolumeRequired" xml:space="preserve">
+    <value>Volume is required</value>
+  </data>
+  <data name="WayOfTransportation" xml:space="preserve">
+    <value>Way of transportation </value>
+  </data>
+  <data name="GlobalBrand" xml:space="preserve">
+    <value>Global brand</value>
+  </data>
+  <data name="LocalBrand" xml:space="preserve">
+    <value>Local brand</value>
+  </data>
+  <data name="ManageCustomers" xml:space="preserve">
+    <value>Manage customers</value>
+  </data>
+  <data name="AddCustomer" xml:space="preserve">
+    <value>Add a new customer</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="GlobalBrands" xml:space="preserve">
+    <value>Global brands</value>
+  </data>
+  <data name="LocalBrands" xml:space="preserve">
+    <value>Local brands</value>
+  </data>
+  <data name="GlobalBrandExists" xml:space="preserve">
+    <value>Global brand already exists</value>
+  </data>
+  <data name="LocalBrandExists" xml:space="preserve">
+    <value>Local brand already exists!</value>
+  </data>
+  <data name="AddCustomerSegment" xml:space="preserve">
+    <value>Add a new customer segment</value>
+  </data>
+  <data name="AddGlobalBrand" xml:space="preserve">
+    <value>Add a new global brand</value>
+  </data>
+  <data name="AddLocalBrand" xml:space="preserve">
+    <value>Add a new local brand</value>
+  </data>
+  <data name="ManageCustomerSegments" xml:space="preserve">
+    <value>Manage customer segments</value>
+  </data>
+  <data name="ManageGlobalBrands" xml:space="preserve">
+    <value>Manage global brands</value>
+  </data>
+  <data name="ManageLocalBrands" xml:space="preserve">
+    <value>Manage local brands</value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="SurveyManagement" xml:space="preserve">
+    <value>Survey management</value>
+  </data>
+  <data name="AddAction" xml:space="preserve">
+    <value>Add new action</value>
+  </data>
+  <data name="AllActions" xml:space="preserve">
+    <value>All actions</value>
+  </data>
+  <data name="CustomizeDashboards" xml:space="preserve">
+    <value>Customize dashboards</value>
+  </data>
+  <data name="DataUpload" xml:space="preserve">
+    <value>Data upload</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="ExportDataAndCharts" xml:space="preserve">
+    <value>Export data and charts</value>
+  </data>
+  <data name="FeedbackCall" xml:space="preserve">
+    <value>Feedback call</value>
+  </data>
+  <data name="GlobalConfiguration" xml:space="preserve">
+    <value>Global configuration</value>
+  </data>
+  <data name="LocalConfiguration" xml:space="preserve">
+    <value>Local configuration</value>
+  </data>
+  <data name="ManageDelegationRequests" xml:space="preserve">
+    <value>Manage delegation requests</value>
+  </data>
+  <data name="ManagementNotification" xml:space="preserve">
+    <value>Management notification</value>
+  </data>
+  <data name="ManageNpsGlobalParameters" xml:space="preserve">
+    <value>Manage NPS global parameters</value>
+  </data>
+  <data name="Menus" xml:space="preserve">
+    <value>Menus</value>
+  </data>
+  <data name="ImprovementActions" xml:space="preserve">
+    <value>Improvement actions</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="RequestDelegation" xml:space="preserve">
+    <value>Request delegation</value>
+  </data>
+  <data name="SurveyCompletion" xml:space="preserve">
+    <value>Survey completion</value>
+  </data>
+  <data name="SurveysList" xml:space="preserve">
+    <value>Surveys list</value>
+  </data>
+  <data name="Tasklist" xml:space="preserve">
+    <value>Tasklist</value>
+  </data>
+  <data name="TouchpointNotification" xml:space="preserve">
+    <value>Touchpoint notification</value>
+  </data>
+  <data name="TranslateNpsSurveyScreenTexts" xml:space="preserve">
+    <value>Translate NPS survey screen texts</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="AssignmentRequired" xml:space="preserve">
+    <value>Assignment is required</value>
+  </data>
+  <data name="AddUserRole" xml:space="preserve">
+    <value>Add a new user role</value>
+  </data>
+  <data name="UserRole" xml:space="preserve">
+    <value>User role</value>
+  </data>
+  <data name="UserRoleRequired" xml:space="preserve">
+    <value>User role is required</value>
+  </data>
+  <data name="UsersInRole" xml:space="preserve">
+    <value>There are users with this role</value>
+  </data>
+  <data name="AutomaticLogOut" xml:space="preserve">
+    <value>Automatic log out</value>
+  </data>
+  <data name="AutomaticLogOutDesc" xml:space="preserve">
+    <value>The number of hours after which the user will be logged out.</value>
+  </data>
+  <data name="BusinessDays" xml:space="preserve">
+    <value>Business Days</value>
+  </data>
+  <data name="CommunicationTaskInterval" xml:space="preserve">
+    <value>Communication tasks due interval</value>
+  </data>
+  <data name="CommunicationTasksDesc" xml:space="preserve">
+    <value>The due date applied to surveys waiting for management confirmation.After that interval expires surveys are considered overdue.This interval begins with the starting of the survey.</value>
+  </data>
+  <data name="DayOfWeek" xml:space="preserve">
+    <value>Day of week</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="DefaultSurveyDesc" xml:space="preserve">
+    <value>The default interval until a reminder email is sent to the customer to fill in the initial questionnaire.This interval begins after the touch point confirmation.</value>
+  </data>
+  <data name="DefaultSurveyReminderInterval" xml:space="preserve">
+    <value>Default survey reminder interval</value>
+  </data>
+  <data name="FeedbackCallDesc" xml:space="preserve">
+    <value>The due date applied to surveys waiting for deedback call.After that interval expires survays are considered overdue.This interval begins with the completion of the initial questionnaire by the customer.</value>
+  </data>
+  <data name="FeedbackCallInterval" xml:space="preserve">
+    <value>Feedback call due interval</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="InvitationEmailDelay" xml:space="preserve">
+    <value>Invitation email delay</value>
+  </data>
+  <data name="InvitationEmailDelayDesc" xml:space="preserve">
+    <value>The interval of time before the initial invitation email is sent to the customer.This interval begins after the touch point confirmation.</value>
+  </data>
+  <data name="ManageNpsConfig" xml:space="preserve">
+    <value>Manage NPS global configuration parameters</value>
+  </data>
+  <data name="ManagmentNotificationDesc" xml:space="preserve">
+    <value>The due date applied to surveys waiting for management confirmation.After that interval expires surveys are considered overdue.This interval begins with the starting of the survey.</value>
+  </data>
+  <data name="ManagmentNotificationInterval" xml:space="preserve">
+    <value>Management notification due interval</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Months</value>
+  </data>
+  <data name="QuickWinsDesc" xml:space="preserve">
+    <value>The due date applied to surveys waiting for management confirmation.After that interval expires surveys are considered overdue.This interval begins with the starting of the survey.</value>
+  </data>
+  <data name="QuickWinsInterval" xml:space="preserve">
+    <value>Quick Wins due interval</value>
+  </data>
+  <data name="RedFlaggingDelay" xml:space="preserve">
+    <value>Red-flagging delay</value>
+  </data>
+  <data name="RedFlaggingDesc" xml:space="preserve">
+    <value>The time in bisiness days after which a survey pending completion by a customer will be red flagged to indicate to the frontline employees that the customer should be reminded at some point to complete it.</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="TouchPointDesc" xml:space="preserve">
+    <value>The due date applied to surveys waiting for managment confirmation.After that interval expires surveys are considered overdue.This interval begins with the starting of the survey.</value>
+  </data>
+  <data name="TouchPointInterval" xml:space="preserve">
+    <value>Touch point notification due interval</value>
+  </data>
+  <data name="UserManagment" xml:space="preserve">
+    <value>User Management</value>
+  </data>
+  <data name="WeeklyDigestDay" xml:space="preserve">
+    <value>Weekly digest day</value>
+  </data>
+  <data name="WeeklyDigestDayDesc" xml:space="preserve">
+    <value>The day of the week on which the weekly digests will be sent.</value>
+  </data>
+  <data name="CustomerJourneyExists" xml:space="preserve">
+    <value>Customer journey already exists</value>
+  </data>
+  <data name="CustomerJourneys" xml:space="preserve">
+    <value>Customer Journeys</value>
+  </data>
+  <data name="ManageCustomerJourneys" xml:space="preserve">
+    <value>Manage customer journeys</value>
+  </data>
+  <data name="AddCustomerJourney" xml:space="preserve">
+    <value>Add a new customer journey</value>
+  </data>
+  <data name="MaximumTransactionAge" xml:space="preserve">
+    <value>Maximum transaction age (Transactional NPS)</value>
+  </data>
+  <data name="MaximumTransactionAgeDesc" xml:space="preserve">
+    <value>The maximum age of a transaction in order for it to be used for a survey. Transactions older than this will be imported for historical data keeping but will not lead to surveys.</value>
+  </data>
+  <data name="Touchpoints" xml:space="preserve">
+    <value>Touchpoints</value>
+  </data>
+  <data name="BusinessLinesRequired" xml:space="preserve">
+    <value>Business lines are required</value>
+  </data>
+  <data name="CountriesRequired" xml:space="preserve">
+    <value>Countries are required</value>
+  </data>
+  <data name="TouchpointsRequired" xml:space="preserve">
+    <value>Touchpoints are required</value>
+  </data>
+  <data name="CantContainSameQuestions" xml:space="preserve">
+    <value>A question can be included only once</value>
+  </data>
+  <data name="OneBusinessLineRequired" xml:space="preserve">
+    <value>At least one business line is required</value>
+  </data>
+  <data name="OneCountryRequired" xml:space="preserve">
+    <value>At least one country is required</value>
+  </data>
+  <data name="OneQuestionRequired" xml:space="preserve">
+    <value>At least one question is required</value>
+  </data>
+  <data name="FeedbackCallIntervalDetractors" xml:space="preserve">
+    <value>Feedback call due interval (Detractors)</value>
+  </data>
+  <data name="FeedbackCallIntervalPassives" xml:space="preserve">
+    <value>Feedback call due interval (Passives)</value>
+  </data>
+  <data name="FeedbackCallIntervalPromoters" xml:space="preserve">
+    <value>Feedback call due interval (Promoters)</value>
+  </data>
+  <data name="MinimalInterviewIntervalRelationship" xml:space="preserve">
+    <value>Minimal interview interval (Relationship NPS)</value>
+  </data>
+  <data name="MinimalInterviewIntervalTransactional" xml:space="preserve">
+    <value>Minimal interview interval (Transactional NPS)</value>
+  </data>
+  <data name="SurveyScreenMustHaveTitle" xml:space="preserve">
+    <value>Survey screen must hava title</value>
+  </data>
+  <data name="TranslateNpsScreenTexts" xml:space="preserve">
+    <value>Translate NPS survey screen texts</value>
+  </data>
+  <data name="BCTC" xml:space="preserve">
+    <value>BCTC</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="OneTouchpointTypeRequired" xml:space="preserve">
+    <value>At least one touchpoint type is required</value>
+  </data>
+  <data name="ActionManagerProposals" xml:space="preserve">
+    <value>Action manager proposals</value>
+  </data>
+  <data name="ConfigurationItems" xml:space="preserve">
+    <value>Configuration items</value>
+  </data>
+  <data name="EmailNotifications" xml:space="preserve">
+    <value>Email Notifications</value>
+  </data>
+  <data name="ItemCompletion" xml:space="preserve">
+    <value>Item completion</value>
+  </data>
+  <data name="ItemsPendingApproval" xml:space="preserve">
+    <value>Items pending approval</value>
+  </data>
+  <data name="ProjectOwnerItems" xml:space="preserve">
+    <value>Project owner items</value>
+  </data>
+  <data name="SystemMessages" xml:space="preserve">
+    <value>System messages</value>
+  </data>
+  <data name="TasklistItems" xml:space="preserve">
+    <value>Tasklist items</value>
+  </data>
+  <data name="ManageNotifications" xml:space="preserve">
+    <value>Manage notifications</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="ManageUserRoles" xml:space="preserve">
+    <value>Manage user roles</value>
+  </data>
+  <data name="AddTouchpoint" xml:space="preserve">
+    <value>Add a new touchpoint</value>
+  </data>
+  <data name="CustomerContactsFor" xml:space="preserve">
+    <value>Customer contacts for</value>
+  </data>
+  <data name="TouchpointExists" xml:space="preserve">
+    <value>Touchpoint already exists!</value>
+  </data>
+  <data name="InvalidPhoneNumber" xml:space="preserve">
+    <value>Invalid phone number</value>
+  </data>
+  <data name="TouchpointRequired" xml:space="preserve">
+    <value>Touchpoint is required</value>
+  </data>
+  <data name="AccessLevel" xml:space="preserve">
+    <value>Access level</value>
+  </data>
+  <data name="FeedbackCallIntervalDetractorsDesc" xml:space="preserve">
+    <value>The due date applied to surveys waiting for feedback call for customers who are detractors. After that interval expires surveys are considered overdue. This interval begins with the completion of the initial questionnaire by the customer.</value>
+  </data>
+  <data name="FeedbackCallIntervalPassivesDesc" xml:space="preserve">
+    <value>The due date applied to surveys waiting for feedback call for customers who are passives. After that interval expires surveys are considered overdue. This interval begins with the completion of the initial questionnaire by the customer.</value>
+  </data>
+  <data name="FeedbackCallIntervalPromotersDesc" xml:space="preserve">
+    <value>The due date applied to surveys waiting for feedback call for customers who are promoters. After that interval expires surveys are considered overdue. This interval begins with the completion of the initial questionnaire by the customer.</value>
+  </data>
+  <data name="MinimalInterviewIntervalRelationshipDesc" xml:space="preserve">
+    <value>The minimum interval in months during which a customer in relationship NPS cannot be included in a new survey if he had already received and responded to a survey.</value>
+  </data>
+  <data name="MinimalInterviewIntervalTransactionalDesc" xml:space="preserve">
+    <value>The minimum interval in months during which a customer in transactional NPS cannot be included in a new survey if he had already received and responded to a survey.</value>
+  </data>
+  <data name="BCs" xml:space="preserve">
+    <value>BCs</value>
+  </data>
+  <data name="BCsRequired" xml:space="preserve">
+    <value>BCs are required</value>
+  </data>
+  <data name="CustomerGlobalNameRequired" xml:space="preserve">
+    <value>Customer global name is required</value>
+  </data>
+  <data name="CustomerLocalNameRequired" xml:space="preserve">
+    <value>Customer local name is required</value>
+  </data>
+  <data name="CustomerSiteNameRequired" xml:space="preserve">
+    <value>Customer CNP is required</value>
+  </data>
+  <data name="AddBc" xml:space="preserve">
+    <value>Add a new BC</value>
+  </data>
+  <data name="DefaultBrand" xml:space="preserve">
+    <value>Default brand</value>
+  </data>
+  <data name="EmailBodyTypeRequired" xml:space="preserve">
+    <value>Email body type is required</value>
+  </data>
+  <data name="SubjectAndBodyRequired" xml:space="preserve">
+    <value>Subject and body are required</value>
+  </data>
+  <data name="ActiveEmailBodyExists" xml:space="preserve">
+    <value>There is already an active email body of this type</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="CreateEmailBody" xml:space="preserve">
+    <value>Add a new email body</value>
+  </data>
+  <data name="EmailBody" xml:space="preserve">
+    <value>Email body</value>
+  </data>
+  <data name="EmailBodyType" xml:space="preserve">
+    <value>Email body type</value>
+  </data>
+  <data name="Signature" xml:space="preserve">
+    <value>Signature</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Email2" xml:space="preserve">
+    <value>Secondary email</value>
+  </data>
+  <data name="Email3" xml:space="preserve">
+    <value>Tertiary email</value>
+  </data>
+  <data name="SurveyLinksExpireAfterRelationship" xml:space="preserve">
+    <value>Survey links expiry period (Relationship NPS)</value>
+  </data>
+  <data name="SurveyLinksExpireAfterRelationshipDesc" xml:space="preserve">
+    <value>The time in business days after which the survey link will expire for relationship NPS. The period begins with after the invitation email has been sent.</value>
+  </data>
+  <data name="SurveyLinksExpireAfterTransactional" xml:space="preserve">
+    <value>Survey links expiry period (Transactional NPS)</value>
+  </data>
+  <data name="SurveyLinksExpireAfterTransactionalDesc" xml:space="preserve">
+    <value>The time in business days after which the survey link will expire for transactional NPS. The period begins with after the invitation email has been sent.</value>
+  </data>
+  <data name="EscalationForFeedbackCall" xml:space="preserve">
+    <value>Escalation for feedback call</value>
+  </data>
+  <data name="InviteForSurveyCompletion" xml:space="preserve">
+    <value>Invite for survey completion</value>
+  </data>
+  <data name="NotificationOnCompletedQuestionnaire" xml:space="preserve">
+    <value>Notification on completed questionnaire</value>
+  </data>
+  <data name="PasswordChange" xml:space="preserve">
+    <value>Password change</value>
+  </data>
+  <data name="ProfileCreation" xml:space="preserve">
+    <value>Profile creation</value>
+  </data>
+  <data name="ReminderForSurveyCompletion" xml:space="preserve">
+    <value>Reminder for survey completion</value>
+  </data>
+  <data name="BrandName" xml:space="preserve">
+    <value>Brand name</value>
+  </data>
+  <data name="ClientInfoTable" xml:space="preserve">
+    <value>Client info table</value>
+  </data>
+  <data name="CustomerSurname" xml:space="preserve">
+    <value>Customer surname</value>
+  </data>
+  <data name="EmailType" xml:space="preserve">
+    <value>Email type</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="InsertParameter" xml:space="preserve">
+    <value>Insert parameter</value>
+  </data>
+  <data name="LinkToFeedbackCallScreen" xml:space="preserve">
+    <value>Link to feedback call screen</value>
+  </data>
+  <data name="NpsStatus" xml:space="preserve">
+    <value>NPS Status</value>
+  </data>
+  <data name="PasswordCreationLink" xml:space="preserve">
+    <value>Password creation link</value>
+  </data>
+  <data name="PolicyOpenedDate" xml:space="preserve">
+    <value>Policy opened date</value>
+  </data>
+  <data name="QuestionnaireLink" xml:space="preserve">
+    <value>Questionnaire link</value>
+  </data>
+  <data name="ResultsInfoTable" xml:space="preserve">
+    <value>Results info table</value>
+  </data>
+  <data name="SystemLink" xml:space="preserve">
+    <value>System link</value>
+  </data>
+  <data name="UnsubscribeButton" xml:space="preserve">
+    <value>Unsubscribe button</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Here" xml:space="preserve">
+    <value>here</value>
+  </data>
+  <data name="BcExists" xml:space="preserve">
+    <value>BC already exists</value>
+  </data>
+  <data name="AllBcs" xml:space="preserve">
+    <value>All BCs</value>
+  </data>
+  <data name="AllTouchpoints" xml:space="preserve">
+    <value>All Touchpoints</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="GlobalCustomerJourney" xml:space="preserve">
+    <value>Global Customer Journey</value>
+  </data>
+  <data name="TouchpointTypeExists" xml:space="preserve">
+    <value>Touchpoint type already exists!</value>
+  </data>
+  <data name="ManageTouchpointTypes" xml:space="preserve">
+    <value>Manage touchpoint types</value>
+  </data>
+  <data name="AddTouchpointType" xml:space="preserve">
+    <value>Add a touchpoint type</value>
+  </data>
+  <data name="CopyExistingSurvey" xml:space="preserve">
+    <value>Copy existing survey</value>
+  </data>
+  <data name="CreateSurvey" xml:space="preserve">
+    <value>Create a new survey</value>
+  </data>
+  <data name="FollowUps" xml:space="preserve">
+    <value>Follow-ups</value>
+  </data>
+  <data name="Questionnaire" xml:space="preserve">
+    <value>Questionnaire</value>
+  </data>
+  <data name="StartFromTemplate" xml:space="preserve">
+    <value>Start from a template</value>
+  </data>
+  <data name="SurveyDetails" xml:space="preserve">
+    <value>Survey details</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="EndDateRequired" xml:space="preserve">
+    <value>End date is required</value>
+  </data>
+  <data name="LanguageRequired" xml:space="preserve">
+    <value>Language is required</value>
+  </data>
+  <data name="NextStep" xml:space="preserve">
+    <value>Next step</value>
+  </data>
+  <data name="OneLanguageRequired" xml:space="preserve">
+    <value>At least one language is required</value>
+  </data>
+  <data name="Reminder" xml:space="preserve">
+    <value>Reminder</value>
+  </data>
+  <data name="ReminderRequired" xml:space="preserve">
+    <value>Reminder is required</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="StartDateRequired" xml:space="preserve">
+    <value>Start date is required</value>
+  </data>
+  <data name="WorkflowRequiredBeforeAddingQuestions" xml:space="preserve">
+    <value>Workflow is required before adding questions</value>
+  </data>
+  <data name="EntryInUse" xml:space="preserve">
+    <value>The entry is in use and cannot be deleted.</value>
+  </data>
+  <data name="ManageEmailBodies" xml:space="preserve">
+    <value>Manage email bodies</value>
+  </data>
+  <data name="AccountInactive" xml:space="preserve">
+    <value>Your account is inactive.</value>
+  </data>
+  <data name="AddFilter" xml:space="preserve">
+    <value>Add Filter</value>
+  </data>
+  <data name="Propose" xml:space="preserve">
+    <value>Propose</value>
+  </data>
+  <data name="ShowArchive" xml:space="preserve">
+    <value>Show Archive</value>
+  </data>
+  <data name="Assigned" xml:space="preserve">
+    <value>Assigned</value>
+  </data>
+  <data name="CancellationRequests" xml:space="preserve">
+    <value>Cancellation Requests</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="Proposed" xml:space="preserve">
+    <value>Proposed</value>
+  </data>
+  <data name="AssignedActions" xml:space="preserve">
+    <value>Assigned Actions</value>
+  </data>
+  <data name="ManageProposal" xml:space="preserve">
+    <value>Manage Proposal</value>
+  </data>
+  <data name="PendingComunication" xml:space="preserve">
+    <value>Pending Comunication</value>
+  </data>
+  <data name="ProposedActions" xml:space="preserve">
+    <value>Proposed Actions</value>
+  </data>
+  <data name="ActionDetails" xml:space="preserve">
+    <value>Action Details</value>
+  </data>
+  <data name="ActionName" xml:space="preserve">
+    <value>Action Name</value>
+  </data>
+  <data name="ActionType" xml:space="preserve">
+    <value>Action Type</value>
+  </data>
+  <data name="ChangeStatus" xml:space="preserve">
+    <value>Change Status</value>
+  </data>
+  <data name="DateProposed" xml:space="preserve">
+    <value>Date Proposed</value>
+  </data>
+  <data name="DateStarted" xml:space="preserve">
+    <value>Date Started</value>
+  </data>
+  <data name="DueDate" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="Initiators" xml:space="preserve">
+    <value>Initiators</value>
+  </data>
+  <data name="ManageImrovementAction" xml:space="preserve">
+    <value>Manage Improvement Action</value>
+  </data>
+  <data name="ManagerOwner" xml:space="preserve">
+    <value>Manager of the owner</value>
+  </data>
+  <data name="Milestones" xml:space="preserve">
+    <value>Milestones</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="ProjectOwner" xml:space="preserve">
+    <value>Project Owner</value>
+  </data>
+  <data name="RelatedSurvey" xml:space="preserve">
+    <value>Related Survey</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="InfoExternalCommunication" xml:space="preserve">
+    <value>Info for external communication</value>
+  </data>
+  <data name="ProjectNotes" xml:space="preserve">
+    <value>Project notes</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="IncludeCustomers" xml:space="preserve">
+    <value>Include customers</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="ManageSurveys" xml:space="preserve">
+    <value>Manage surveys</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="NotStarted" xml:space="preserve">
+    <value>Not started</value>
+  </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Pending approval</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="InterviewsSent" xml:space="preserve">
+    <value>Interviews sent</value>
+  </data>
+  <data name="RequestApproval" xml:space="preserve">
+    <value>Request approval</value>
+  </data>
+  <data name="StartSurvey" xml:space="preserve">
+    <value>Start survey</value>
+  </data>
+  <data name="SurveyExists" xml:space="preserve">
+    <value>Survey with this name already exists</value>
+  </data>
+  <data name="SurveysInProgress" xml:space="preserve">
+    <value>Surveys in progress</value>
+  </data>
+  <data name="SurveysPendingApproval" xml:space="preserve">
+    <value>Surveys pending approval</value>
+  </data>
+  <data name="TouchpointsInScope" xml:space="preserve">
+    <value>Touchpoints in scope</value>
+  </data>
+  <data name="ViewTasks" xml:space="preserve">
+    <value>View tasks</value>
+  </data>
+  <data name="SurveysCancelled" xml:space="preserve">
+    <value>Surveys cancelled</value>
+  </data>
+  <data name="SurveysCompleted" xml:space="preserve">
+    <value>Surveys completed</value>
+  </data>
+  <data name="SurveysNotStarted" xml:space="preserve">
+    <value>Surveys not started</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="CompletedSurveys" xml:space="preserve">
+    <value>Completed Surveys</value>
+  </data>
+  <data name="PendingFeedbackCall" xml:space="preserve">
+    <value>Pending Feedback Call</value>
+  </data>
+  <data name="PendingManagementNotification" xml:space="preserve">
+    <value>Pending Management Notification</value>
+  </data>
+  <data name="PendingSurveyCompletion" xml:space="preserve">
+    <value>Pending Survey Completion</value>
+  </data>
+  <data name="PendingTouchpointNotification" xml:space="preserve">
+    <value>Pending Touchpoint Notification</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="AutomaticReminder" xml:space="preserve">
+    <value>Automatic reminder</value>
+  </data>
+  <data name="ConductFeedbackCall" xml:space="preserve">
+    <value>Conduct feedback call</value>
+  </data>
+  <data name="CopyLink" xml:space="preserve">
+    <value>Copy link</value>
+  </data>
+  <data name="EmailRequest" xml:space="preserve">
+    <value>Email request</value>
+  </data>
+  <data name="InvitationSent" xml:space="preserve">
+    <value>Invitation sent</value>
+  </data>
+  <data name="Origin" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="SendReminder" xml:space="preserve">
+    <value>Send reminder</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="Survey" xml:space="preserve">
+    <value>Survey</value>
+  </data>
+  <data name="ViewResults" xml:space="preserve">
+    <value>View results</value>
+  </data>
+  <data name="Completion" xml:space="preserve">
+    <value>Completion</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="DataBreakdown" xml:space="preserve">
+    <value>Data breakdown</value>
+  </data>
+  <data name="NpsResultsFor" xml:space="preserve">
+    <value>NPS Results for</value>
+  </data>
+  <data name="ShowLess" xml:space="preserve">
+    <value>show less</value>
+  </data>
+  <data name="ShowMore" xml:space="preserve">
+    <value>show more</value>
+  </data>
+  <data name="NPSResultsInTime" xml:space="preserve">
+    <value>NPS Results in time</value>
+  </data>
+  <data name="NPSResultsPerBusinessLine" xml:space="preserve">
+    <value>NPS Results per Business Line</value>
+  </data>
+  <data name="AnswerRequired" xml:space="preserve">
+    <value>Answer is required</value>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>Continue Button</value>
+  </data>
+  <data name="DriverQuestionPlaceholder" xml:space="preserve">
+    <value>Driver Question Placeholder</value>
+  </data>
+  <data name="EffortLabels" xml:space="preserve">
+    <value>Effort Labels</value>
+  </data>
+  <data name="ErrorPage" xml:space="preserve">
+    <value>Error Page</value>
+  </data>
+  <data name="HugeEffort" xml:space="preserve">
+    <value>Huge effort</value>
+  </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>Learn More</value>
+  </data>
+  <data name="Likely" xml:space="preserve">
+    <value>Likely</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="LittleEffort" xml:space="preserve">
+    <value>Little effort</value>
+  </data>
+  <data name="Neutral" xml:space="preserve">
+    <value>Neutral</value>
+  </data>
+  <data name="NotApplicable" xml:space="preserve">
+    <value>Not Applicable</value>
+  </data>
+  <data name="NotLikely" xml:space="preserve">
+    <value>Not likely</value>
+  </data>
+  <data name="NpsClarification" xml:space="preserve">
+    <value>NPS Clarification</value>
+  </data>
+  <data name="NpsQuestionTheme" xml:space="preserve">
+    <value>NPS Question Theme</value>
+  </data>
+  <data name="NpsQuestionLabels" xml:space="preserve">
+    <value>NPS Question Labels</value>
+  </data>
+  <data name="OpenAnswerQuestionPlaceholder" xml:space="preserve">
+    <value>Open Answer Question Placeholder</value>
+  </data>
+  <data name="RequiredAnswerText" xml:space="preserve">
+    <value>Required Answer Text</value>
+  </data>
+  <data name="SatisfactionQuestionTheme" xml:space="preserve">
+    <value>Satisfaction Question Theme</value>
+  </data>
+  <data name="ThankYouPage" xml:space="preserve">
+    <value>Thank You Page</value>
+  </data>
+  <data name="WelcomePage" xml:space="preserve">
+    <value>Welcome page</value>
+  </data>
+  <data name="LongTermInitiative" xml:space="preserve">
+    <value>Long Term Initiative</value>
+  </data>
+  <data name="NotYetApproved" xml:space="preserve">
+    <value>Not Yet Approved</value>
+  </data>
+  <data name="OnHold" xml:space="preserve">
+    <value>On Hold</value>
+  </data>
+  <data name="QuickWin" xml:space="preserve">
+    <value>Quick Win</value>
+  </data>
+  <data name="ReviewCommunication" xml:space="preserve">
+    <value>Review communication</value>
+  </data>
+  <data name="InterviewConductedOn" xml:space="preserve">
+    <value>Interview conducted on</value>
+  </data>
+  <data name="NotYetStarted" xml:space="preserve">
+    <value>Not Yet Started</value>
+  </data>
+  <data name="ActionOverdue" xml:space="preserve">
+    <value>Action overdue</value>
+  </data>
+  <data name="ItemsPerPage" xml:space="preserve">
+    <value>Items per page</value>
+  </data>
+  <data name="MilestoneOverdue" xml:space="preserve">
+    <value>Milestone overdue</value>
+  </data>
+  <data name="MyActions" xml:space="preserve">
+    <value>My actions</value>
+  </data>
+  <data name="EffortQuestionTheme" xml:space="preserve">
+    <value>Effort Question Theme</value>
+  </data>
+  <data name="Detractors" xml:space="preserve">
+    <value>Detractors</value>
+  </data>
+  <data name="Passives" xml:space="preserve">
+    <value>Passives</value>
+  </data>
+  <data name="Promoters" xml:space="preserve">
+    <value>Promoters</value>
+  </data>
+  <data name="NPSResultsInTimeByTouchPoint" xml:space="preserve">
+    <value>NPS Results in time by Touch Point</value>
+  </data>
+  <data name="NPSResultsPerTouchPoint" xml:space="preserve">
+    <value>NPS Results per Touch point</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="AddQuestion" xml:space="preserve">
+    <value>Add a question</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="NavigationButtons" xml:space="preserve">
+    <value>Navigation buttons</value>
+  </data>
+  <data name="AffectedCustomers" xml:space="preserve">
+    <value>Affected customers</value>
+  </data>
+  <data name="AddNewMilestone" xml:space="preserve">
+    <value>Add new milestone</value>
+  </data>
+  <data name="AddNewNote" xml:space="preserve">
+    <value>Add new note</value>
+  </data>
+  <data name="NoteTextRequired" xml:space="preserve">
+    <value>Project note text  is required</value>
+  </data>
+  <data name="AllowOpenEndedAnswer" xml:space="preserve">
+    <value>Allow open-ended answer?</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="TranslateAllQuestionsBeforeStartingSurvey" xml:space="preserve">
+    <value>Survey cannot be started because some questions or placeholders have no translations</value>
+  </data>
+  <data name="CurrentProgressFor" xml:space="preserve">
+    <value>Current Progress for</value>
+  </data>
+  <data name="SentSurveyLinks" xml:space="preserve">
+    <value>sent survey links</value>
+  </data>
+  <data name="FeedbackCallsInProgress" xml:space="preserve">
+    <value>feedback calls in progress</value>
+  </data>
+  <data name="ImprovementProjects" xml:space="preserve">
+    <value>improvement projects</value>
+  </data>
+  <data name="InterviewsInProgress" xml:space="preserve">
+    <value>interviews in progress</value>
+  </data>
+  <data name="LoopsClosed" xml:space="preserve">
+    <value>loops closed</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="FeedbackCalls" xml:space="preserve">
+    <value>Feedback calls</value>
+  </data>
+  <data name="NotResponsed" xml:space="preserve">
+    <value>Not Responsed</value>
+  </data>
+  <data name="Responsed" xml:space="preserve">
+    <value>Responsed</value>
+  </data>
+  <data name="ResponseRate" xml:space="preserve">
+    <value>Response rate</value>
+  </data>
+  <data name="RunningSurveys" xml:space="preserve">
+    <value>Running surveys</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Prev</value>
+  </data>
+  <data name="CompletedFeedbackCalls" xml:space="preserve">
+    <value>completed feedback calls</value>
+  </data>
+  <data name="CompletedInterviews" xml:space="preserve">
+    <value>completed interviews</value>
+  </data>
+  <data name="CreatedProjects" xml:space="preserve">
+    <value>created projects</value>
+  </data>
+  <data name="GoToSurvey" xml:space="preserve">
+    <value>Go to survey</value>
+  </data>
+  <data name="LinksSent" xml:space="preserve">
+    <value>links sent</value>
+  </data>
+  <data name="NpsOverview" xml:space="preserve">
+    <value>NPS Overview</value>
+  </data>
+  <data name="NPS" xml:space="preserve">
+    <value>NPS</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="SurveyResults" xml:space="preserve">
+    <value>Survey Results</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="MarkAsCompleted" xml:space="preserve">
+    <value>Mark as completed</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Save changes</value>
+  </data>
+  <data name="FeedbackCallPreparation" xml:space="preserve">
+    <value>Feedback Call preparation</value>
+  </data>
+  <data name="GlobalNeedsAnalysis" xml:space="preserve">
+    <value>Global Needs Analysis and immediate actions</value>
+  </data>
+  <data name="WhatAreWeDoingWell" xml:space="preserve">
+    <value>What are we doing well?</value>
+  </data>
+  <data name="WhatShouldWeImprove" xml:space="preserve">
+    <value>What should we improve?</value>
+  </data>
+  <data name="DateResponded" xml:space="preserve">
+    <value>Date Responded</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="ProposeAnAction" xml:space="preserve">
+    <value>Propose an action</value>
+  </data>
+  <data name="CompletedCalls" xml:space="preserve">
+    <value>Completed calls</value>
+  </data>
+  <data name="CompletedInterviewsUppercase" xml:space="preserve">
+    <value>Completed interviews</value>
+  </data>
+  <data name="SentLinks" xml:space="preserve">
+    <value>Sent links</value>
+  </data>
+  <data name="StartedProjects" xml:space="preserve">
+    <value>Started projects</value>
+  </data>
+  <data name="AllCountriesAndBusinessLines" xml:space="preserve">
+    <value>All Countries &amp; Business lines</value>
+  </data>
+  <data name="CountryAndBusinessLine" xml:space="preserve">
+    <value>Country &amp; Business line</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="ClosingPageTheme" xml:space="preserve">
+    <value>Closing Page Theme</value>
+  </data>
+  <data name="DriverQuestionTheme" xml:space="preserve">
+    <value>Driver Question Theme</value>
+  </data>
+  <data name="OpenEndedQuestionTheme" xml:space="preserve">
+    <value>Open Ended Question Theme</value>
+  </data>
+  <data name="SatisactionQuestionTheme" xml:space="preserve">
+    <value>Satisfaction Question Theme</value>
+  </data>
+  <data name="WelcomeTheme" xml:space="preserve">
+    <value>Welcome theme</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="QuestionnaireIsInUse" xml:space="preserve">
+    <value>Cannot delete questionnaire because its in use</value>
+  </data>
+  <data name="OneAnswerRequired" xml:space="preserve">
+    <value>At least one answer is required</value>
+  </data>
+  <data name="DefaultLanguage" xml:space="preserve">
+    <value>Default language</value>
+  </data>
+  <data name="DefaultLanguageRequired" xml:space="preserve">
+    <value>Default language is required</value>
+  </data>
+  <data name="SignatureRequired" xml:space="preserve">
+    <value>Signature is required</value>
+  </data>
+  <data name="ManageTransactions" xml:space="preserve">
+    <value>Manage transactions</value>
+  </data>
+  <data name="EscalationForFeedbackCallDetractors" xml:space="preserve">
+    <value>Escalation for feedback call - Detractors</value>
+  </data>
+  <data name="SelectAllQuestions" xml:space="preserve">
+    <value>Please select all questions</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Click here</value>
+  </data>
+  <data name="Unsubscribe" xml:space="preserve">
+    <value>Unsubscribe</value>
+  </data>
+  <data name="ProposeImprovementAction" xml:space="preserve">
+    <value>Propose improvement action</value>
+  </data>
+  <data name="FilterCustomers" xml:space="preserve">
+    <value>Filter customers</value>
+  </data>
+  <data name="ViewAll" xml:space="preserve">
+    <value>view all</value>
+  </data>
+  <data name="AffectedAddBusinessLine" xml:space="preserve">
+    <value>Add business line</value>
+  </data>
+  <data name="AffectedAddCountry" xml:space="preserve">
+    <value>Add country</value>
+  </data>
+  <data name="AffectedAddCustomer" xml:space="preserve">
+    <value>Add customer</value>
+  </data>
+  <data name="AffectedAddTouchpointType" xml:space="preserve">
+    <value>Add touchpoint</value>
+  </data>
+  <data name="CommunicationTasks" xml:space="preserve">
+    <value>Communication tasks</value>
+  </data>
+  <data name="IsOpen" xml:space="preserve">
+    <value>Opened</value>
+  </data>
+  <data name="TaskCompletionComments" xml:space="preserve">
+    <value>Task completion comments</value>
+  </data>
+  <data name="ActiveImprovementProjects" xml:space="preserve">
+    <value>Active improvement projects</value>
+  </data>
+  <data name="ActivityManager" xml:space="preserve">
+    <value>Activity manager</value>
+  </data>
+  <data name="WelcomeBack" xml:space="preserve">
+    <value>Welcome back</value>
+  </data>
+  <data name="SurveyActionList" xml:space="preserve">
+    <value>Survey Action List</value>
+  </data>
+  <data name="CallBack" xml:space="preserve">
+    <value>Call back</value>
+  </data>
+  <data name="LongTermInitiatives" xml:space="preserve">
+    <value>Long term initiatives</value>
+  </data>
+  <data name="QuickWins" xml:space="preserve">
+    <value>Quick wins</value>
+  </data>
+  <data name="CustomerContactsInScope" xml:space="preserve">
+    <value>Customer contacts in scope</value>
+  </data>
+  <data name="ImprovementActionCreated" xml:space="preserve">
+    <value>The improvement action has been created.</value>
+  </data>
+  <data name="PrimaryEmail" xml:space="preserve">
+    <value>Primary email</value>
+  </data>
+  <data name="Agency" xml:space="preserve">
+    <value>Agency</value>
+  </data>
+  <data name="AgentName" xml:space="preserve">
+    <value>Agent name</value>
+  </data>
+  <data name="AgentNumber" xml:space="preserve">
+    <value>Agent number</value>
+  </data>
+  <data name="AgentSurname" xml:space="preserve">
+    <value>Agent surname</value>
+  </data>
+  <data name="ClientCnpCopyPaste" xml:space="preserve">
+    <value>Client CNP(copy and paste)</value>
+  </data>
+  <data name="ClientFirstPhone" xml:space="preserve">
+    <value>Client phone number №1</value>
+  </data>
+  <data name="ClientInformation" xml:space="preserve">
+    <value>Client information</value>
+  </data>
+  <data name="ClientName" xml:space="preserve">
+    <value>Client name</value>
+  </data>
+  <data name="ClientSecondPhone" xml:space="preserve">
+    <value>Client phone number №2</value>
+  </data>
+  <data name="ClientSurname" xml:space="preserve">
+    <value>Client surname</value>
+  </data>
+  <data name="ClientThirdPhone" xml:space="preserve">
+    <value>Client phone number №3</value>
+  </data>
+  <data name="SurveyReceivedOn" xml:space="preserve">
+    <value>Survey is received on</value>
+  </data>
+  <data name="SelectManager" xml:space="preserve">
+    <value>Select manager</value>
+  </data>
+  <data name="SelectOwner" xml:space="preserve">
+    <value>Select owner</value>
+  </data>
+  <data name="GlobalName" xml:space="preserve">
+    <value>Global name</value>
+  </data>
+  <data name="LocalName" xml:space="preserve">
+    <value>Local name</value>
+  </data>
+  <data name="LocalNameRequired" xml:space="preserve">
+    <value>Local name is required</value>
+  </data>
+  <data name="OneCustomerRequired" xml:space="preserve">
+    <value>At least one customer is required</value>
+  </data>
+  <data name="ClickHereInvitationButton" xml:space="preserve">
+    <value>Click here (for the survey invitation button)</value>
+  </data>
+  <data name="HereAllLinks" xml:space="preserve">
+    <value>Here (for all links in the emails)</value>
+  </data>
+  <data name="DomainExtensionExists" xml:space="preserve">
+    <value>Brand domain extension already exists.</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadLinkForReport" xml:space="preserve">
+    <value>Download link for report</value>
+  </data>
+  <data name="ReportCreation" xml:space="preserve">
+    <value>Report Creation</value>
+  </data>
+  <data name="TheSelectedItem" xml:space="preserve">
+    <value>the selected item</value>
+  </data>
+  <data name="SpecifyTouchpointAndBusinessLine" xml:space="preserve">
+    <value>Please specify both touchpoint and business line or leave them both empty.</value>
+  </data>
+  <data name="Detractor" xml:space="preserve">
+    <value>Detractor</value>
+  </data>
+  <data name="Passive" xml:space="preserve">
+    <value>Passive</value>
+  </data>
+  <data name="Promoter" xml:space="preserve">
+    <value>Promoter</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="CheckOurSupportPage" xml:space="preserve">
+    <value>Check our support page</value>
+  </data>
+  <data name="HowCanWeHelpYou" xml:space="preserve">
+    <value>How can we help you?</value>
+  </data>
+  <data name="YourSolutionMightJustBeThere" xml:space="preserve">
+    <value>Your solution might just be there.</value>
+  </data>
+  <data name="PleaseSelectAValidEndDate" xml:space="preserve">
+    <value>The survey end date has passed. Please select a valid end date.</value>
+  </data>
+  <data name="PleaseSelectAValidStartDate" xml:space="preserve">
+    <value>The survey start date has passed. Please select a valid start date.</value>
+  </data>
+  <data name="PleaseSelectAValidDateCombination" xml:space="preserve">
+    <value>Please select a valid date combination.</value>
+  </data>
+  <data name="KeyAnswers" xml:space="preserve">
+    <value>Key answers</value>
+  </data>
+  <data name="ServiceDateOpen" xml:space="preserve">
+    <value>Service date open</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="ChooseTouchpointAndLanguage" xml:space="preserve">
+    <value>Please choose a language and touchpoint to begin your preview</value>
+  </data>
+  <data name="DriverResultsFor" xml:space="preserve">
+    <value>Driver results for</value>
+  </data>
+  <data name="DriverImportance" xml:space="preserve">
+    <value>Driver importance</value>
+  </data>
+  <data name="LevelOfImportance" xml:space="preserve">
+    <value>Level of importance</value>
+  </data>
+  <data name="DerivedImportanceOfDrivers" xml:space="preserve">
+    <value>Derived importance of drivers</value>
+  </data>
+  <data name="DriverPerformance" xml:space="preserve">
+    <value>Driver performance</value>
+  </data>
+  <data name="AverageDriverScore" xml:space="preserve">
+    <value>Average driver score</value>
+  </data>
+  <data name="ViewInBrowserLink" xml:space="preserve">
+    <value>View in browser link</value>
+  </data>
+  <data name="AddMore" xml:space="preserve">
+    <value>Add more</value>
+  </data>
+  <data name="UpdateAffectedCustomers" xml:space="preserve">
+    <value>Update affected customers</value>
+  </data>
+  <data name="InvitationSentDate" xml:space="preserve">
+    <value>Invitation Sent Date</value>
+  </data>
+  <data name="ReminderSentDate" xml:space="preserve">
+    <value>Reminder Sent Date</value>
+  </data>
+  <data name="TouchpointType" xml:space="preserve">
+    <value>Touchpoint</value>
+  </data>
+  <data name="Reopen" xml:space="preserve">
+    <value>Reopen</value>
+  </data>
+  <data name="DriverQuestionLabel" xml:space="preserve">
+    <value>Driver Question Label</value>
+  </data>
+  <data name="AffectedCustomersDeleteRow" xml:space="preserve">
+    <value>Selected rows will be deleted on save</value>
+  </data>
+  <data name="PasswordSetSuccessfully" xml:space="preserve">
+    <value>Your password has been reset successfully!</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="WelcomeTo" xml:space="preserve">
+    <value>Welcome to</value>
+  </data>
+  <data name="FileTypeException" xml:space="preserve">
+    <value>This file format is not supported</value>
+  </data>
+  <data name="CountryScorecard" xml:space="preserve">
+    <value>Country Scorecard</value>
+  </data>
+  <data name="ProjectFiles" xml:space="preserve">
+    <value>Project files</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="ManageData" xml:space="preserve">
+    <value>Manage data</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Created by</value>
+  </data>
+  <data name="DateCreated" xml:space="preserve">
+    <value>Date created</value>
+  </data>
+  <data name="LastUpdated" xml:space="preserve">
+    <value>Last updated</value>
+  </data>
+  <data name="CreateFolder" xml:space="preserve">
+    <value>Create new folder</value>
+  </data>
+  <data name="DataFileUploadError" xml:space="preserve">
+    <value>File upload failed!</value>
+  </data>
+  <data name="UploadFiles" xml:space="preserve">
+    <value>Upload files</value>
+  </data>
+  <data name="FolderExists" xml:space="preserve">
+    <value>Folder exists</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Folder name</value>
+  </data>
+  <data name="FolderNameExists" xml:space="preserve">
+    <value>Folder name is already in use</value>
+  </data>
+  <data name="SelectFolder" xml:space="preserve">
+    <value>Select folder</value>
+  </data>
+  <data name="DeleteException" xml:space="preserve">
+    <value>You cannot delete this item</value>
+  </data>
+  <data name="EditExeption" xml:space="preserve">
+    <value>You cannot edit this item</value>
+  </data>
+  <data name="FolderNameRequired" xml:space="preserve">
+    <value>Please enter folder name.</value>
+  </data>
+  <data name="DriverImportanceAndPerformance" xml:space="preserve">
+    <value>Driver importance and performance</value>
+  </data>
+  <data name="DriverScoresInTime" xml:space="preserve">
+    <value>Driver scores in time</value>
+  </data>
+  <data name="LeadershipPosition" xml:space="preserve">
+    <value>Leadership position</value>
+  </data>
+  <data name="pNPSBroadband" xml:space="preserve">
+    <value>pNPS Broadband</value>
+  </data>
+  <data name="pNPSHomePhone" xml:space="preserve">
+    <value>pNPS Home phone</value>
+  </data>
+  <data name="pNPSMobile" xml:space="preserve">
+    <value>pNPS Mobile</value>
+  </data>
+  <data name="pNPSTv" xml:space="preserve">
+    <value>pNPS TV</value>
+  </data>
+  <data name="RelationshipNps" xml:space="preserve">
+    <value>Relationship NPS</value>
+  </data>
+  <data name="SelectCountry" xml:space="preserve">
+    <value>Select country</value>
+  </data>
+  <data name="SelectNpsType" xml:space="preserve">
+    <value>Select NPS type</value>
+  </data>
+  <data name="SelectQuarter" xml:space="preserve">
+    <value>Select Quarter</value>
+  </data>
+  <data name="EndQuarter" xml:space="preserve">
+    <value>End quarter</value>
+  </data>
+  <data name="EndYear" xml:space="preserve">
+    <value>End year</value>
+  </data>
+  <data name="StartQuarter" xml:space="preserve">
+    <value>Start quarter</value>
+  </data>
+  <data name="StartYear" xml:space="preserve">
+    <value>Start year</value>
+  </data>
+  <data name="HomeSubtitle" xml:space="preserve">
+    <value>This is your global overview. Click on a country to see a country scorecard.</value>
+  </data>
+  <data name="HomeTitle" xml:space="preserve">
+    <value>Welcome to Liberty Global Competitive Benchmarking Portal!</value>
+  </data>
+  <data name="LeadershipDynamics" xml:space="preserve">
+    <value>Leadership position dynamics</value>
+  </data>
+  <data name="Trust" xml:space="preserve">
+    <value>Trust</value>
+  </data>
+  <data name="CallQualityHomePhone" xml:space="preserve">
+    <value>Call quality</value>
+  </data>
+  <data name="CallQualityMobile" xml:space="preserve">
+    <value>Call quality</value>
+  </data>
+  <data name="HandsetsMobile" xml:space="preserve">
+    <value>Handsets</value>
+  </data>
+  <data name="ComparesWellToCompetitors" xml:space="preserve">
+    <value>Compares well to competitors</value>
+  </data>
+  <data name="CompleteSeasonsTV" xml:space="preserve">
+    <value>Complete seasons</value>
+  </data>
+  <data name="ReliabilityBroadband" xml:space="preserve">
+    <value>Reliability</value>
+  </data>
+  <data name="KidContentRangeTV" xml:space="preserve">
+    <value>Kid content range</value>
+  </data>
+  <data name="LineRentalCostHomePhone" xml:space="preserve">
+    <value>Line rental cost</value>
+  </data>
+  <data name="RewardsItsCustomers" xml:space="preserve">
+    <value>Rewards its customers</value>
+  </data>
+  <data name="CustomerService" xml:space="preserve">
+    <value>Customer service</value>
+  </data>
+  <data name="CustomerServiceBroadband" xml:space="preserve">
+    <value>Customer service</value>
+  </data>
+  <data name="CustomerServiceHomePhone" xml:space="preserve">
+    <value>Customer service</value>
+  </data>
+  <data name="CustomerServiceMobile" xml:space="preserve">
+    <value>Customer service</value>
+  </data>
+  <data name="CustomerServiceTV" xml:space="preserve">
+    <value>Customer service</value>
+  </data>
+  <data name="EaseOfUseBroadband" xml:space="preserve">
+    <value>Ease of use</value>
+  </data>
+  <data name="FindableContentTV" xml:space="preserve">
+    <value>Findable content</value>
+  </data>
+  <data name="InclusiveFreeContentTV" xml:space="preserve">
+    <value>Inclusive free content</value>
+  </data>
+  <data name="MobileDataMobile" xml:space="preserve">
+    <value>Mobile data</value>
+  </data>
+  <data name="MoviesChannelsRangeTV" xml:space="preserve">
+    <value>Movies channels range</value>
+  </data>
+  <data name="CoverageMobile" xml:space="preserve">
+    <value>Coverage</value>
+  </data>
+  <data name="PayPerViewTV" xml:space="preserve">
+    <value>Pay per view</value>
+  </data>
+  <data name="PictureAndSoundQualityTV" xml:space="preserve">
+    <value>Picture and sound quality</value>
+  </data>
+  <data name="ProductQuality" xml:space="preserve">
+    <value>Product quality</value>
+  </data>
+  <data name="SystemResponsivenessTV" xml:space="preserve">
+    <value>System responsiveness</value>
+  </data>
+  <data name="RoamingMobile" xml:space="preserve">
+    <value>Roaming</value>
+  </data>
+  <data name="ReliabilityHomePhone" xml:space="preserve">
+    <value>Reliability</value>
+  </data>
+  <data name="SpeedBroadband" xml:space="preserve">
+    <value>Speed</value>
+  </data>
+  <data name="SportsChannelsRangeTV" xml:space="preserve">
+    <value>Sports channels range</value>
+  </data>
+  <data name="ReliabilityTV" xml:space="preserve">
+    <value>Reliability</value>
+  </data>
+  <data name="ValueForMoney" xml:space="preserve">
+    <value>Value for money</value>
+  </data>
+  <data name="ValueForMoneyBroadband" xml:space="preserve">
+    <value>Value for money</value>
+  </data>
+  <data name="ValueForMoneyHomePhone" xml:space="preserve">
+    <value>Value for money</value>
+  </data>
+  <data name="ValueForMoneyMobile" xml:space="preserve">
+    <value>Value for money</value>
+  </data>
+  <data name="ValueForMoneyTV" xml:space="preserve">
+    <value>Value for money</value>
+  </data>
+  <data name="WiFiRangeBroadband" xml:space="preserve">
+    <value>Wi-Fi range</value>
+  </data>
+  <data name="CoLead" xml:space="preserve">
+    <value>Co-Lead</value>
+  </data>
+  <data name="Lead" xml:space="preserve">
+    <value>Lead</value>
+  </data>
+  <data name="LibertyGlobal" xml:space="preserve">
+    <value>Liberty Global</value>
+  </data>
+  <data name="Trailing" xml:space="preserve">
+    <value>Trailing</value>
+  </data>
+  <data name="NPSPerformance" xml:space="preserve">
+    <value>NPS Performance</value>
+  </data>
+  <data name="NPSRanking" xml:space="preserve">
+    <value>NPS Ranking</value>
+  </data>
+  <data name="NPSRankingInTime" xml:space="preserve">
+    <value>NPS Ranking in Time</value>
+  </data>
+  <data name="tNPSBuy" xml:space="preserve">
+    <value>tNPS Buy</value>
+  </data>
+  <data name="tNPSChangeEngineer" xml:space="preserve">
+    <value>tNPS Change/Engineer</value>
+  </data>
+  <data name="tNPSHelpService" xml:space="preserve">
+    <value>tNPS Help/Service</value>
+  </data>
+  <data name="tNPSInstall" xml:space="preserve">
+    <value>tNPS Install</value>
+  </data>
+  <data name="CSATPerformanceAttributes" xml:space="preserve">
+    <value>CSAT Performance Attributes (averages)</value>
+  </data>
+  <data name="CSATPerformanceAttributesInTime" xml:space="preserve">
+    <value>CSAT Performance Attributes in Time (averages)</value>
+  </data>
+  <data name="LibertyGlobalCSAT" xml:space="preserve">
+    <value>Liberty Global&lt;br/&gt;CSAT</value>
+  </data>
+  <data name="LibertyGlobalNPS" xml:space="preserve">
+    <value>Liberty Global&lt;br/&gt;NPS</value>
+  </data>
+  <data name="NPSPerformanceInTime" xml:space="preserve">
+    <value>NPS Performance in Time</value>
+  </data>
+  <data name="CoLeadInfo" xml:space="preserve">
+    <value>Liberty Global brand leads together with other brand/s, without statistically significant difference.</value>
+  </data>
+  <data name="LeadInfo" xml:space="preserve">
+    <value>Liberty Global brand owns the highest result and it is statistically significant versus other brands.</value>
+  </data>
+  <data name="MedalliaInfo" xml:space="preserve">
+    <value>Absolute NPS (or CSAT) score sourced from Liberty internal research (Medallia), relevant for the respective period.</value>
+  </data>
+  <data name="BaselineInfo" xml:space="preserve">
+    <value>Our Market performance is always set at baseline for comparison. Competitors scores represent the difference vs our performance.</value>
+  </data>
+  <data name="TrailingInfo" xml:space="preserve">
+    <value>Liberty Global brand lags behind at least one competitor, statistically significant difference.</value>
+  </data>
+  <data name="NPSType" xml:space="preserve">
+    <value>NPS Type</value>
+  </data>
+  <data name="AsBenchmark" xml:space="preserve">
+    <value>as Benchmark</value>
+  </data>
+  <data name="CSAT" xml:space="preserve">
+    <value>CSAT</value>
+  </data>
+  <data name="CustomerPriority" xml:space="preserve">
+    <value>Customer priority based on regression analysis of CSAT attributes for all brands vs NPS</value>
+  </data>
+  <data name="High" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="FromMedallia" xml:space="preserve">
+    <value>from Medallia</value>
+  </data>
+  <data name="NoDataYetAvailable" xml:space="preserve">
+    <value>No data yet available.</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="BuyInfo" xml:space="preserve">
+    <value>Signed up for a service or made a change in past 6 months.</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="ChangeInfo" xml:space="preserve">
+    <value>Change = Contacted customer service or asked for advice which resulted in change of subscription. (UK, IE, CH, AT)</value>
+  </data>
+  <data name="Engineer" xml:space="preserve">
+    <value>Engineer</value>
+  </data>
+  <data name="EngineerInfo" xml:space="preserve">
+    <value>Engineer = Was visited by an engineer in past 6 months. (NL, HU, PL, CZ, SK, RO)</value>
+  </data>
+  <data name="HelpInfo" xml:space="preserve">
+    <value>Help = Contacted customer service or asked in a shop for advice without change in subscription. (UK, IE, CH, AT)</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="InstallInfo" xml:space="preserve">
+    <value>Completed assisted or self-installation in past 6 months.</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="ServiceInfo" xml:space="preserve">
+    <value>Service = Had a problem for which contacted provider in past 6 months. (NL, HU, PL, CZ, SK, RO)</value>
+  </data>
+  <data name="TransactionTypes" xml:space="preserve">
+    <value>Transaction types</value>
+  </data>
+  <data name="ChangeEngineer" xml:space="preserve">
+    <value>Change/Engineer</value>
+  </data>
+  <data name="HelpService" xml:space="preserve">
+    <value>Help/Service</value>
+  </data>
+  <data name="NoDataAvailable" xml:space="preserve">
+    <value>No data available.</value>
+  </data>
+  <data name="ExtensionError" xml:space="preserve">
+    <value>Only .xlsx files can be uploaded!</value>
+  </data>
+</root>

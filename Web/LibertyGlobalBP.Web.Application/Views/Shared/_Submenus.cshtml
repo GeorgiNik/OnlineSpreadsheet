@@ -1,0 +1,52 @@
+﻿
+@*<div id="dashboard-submenu" class="submenu">
+    @if (ViewBag.User.HasAccess(AccessRequest.Overview))
+        {
+            <a href="/Dashboard/Overview">@Resources.Overview</a>
+        }
+
+    <a href="/NpsResults/Index">@Resources.NpsResults</a>
+
+
+
+    <a href="/DriverResults/Index">@Resources.DriverResults</a>
+
+    @if (ViewBag.User.HasAccess(AccessRequest.TextAnalytics))
+        {
+            <a href="/Dashboard/TextAnalytics">@Resources.TextAnalytics</a>
+        }
+
+        @if (ViewBag.User.HasAccess(AccessRequest.CustomerPortal))
+        {
+            <a href="/Dashboard/CustomerPortal">@Resources.CustomerPortal</a>
+        }
+
+    <a href="/CurrentProgress/Index">@Resources.CurrentProgress</a>
+
+
+    <a href="/Dashboard/ActionProgress">@Resources.ActionProgress</a>
+
+</div>*@
+
+@if (ViewBag.User.HasAccess(AccessRequest.ConfigurationRead))
+{
+    <div id="admin-submenu" class="submenu">
+        @if (ViewBag.User.HasAccess(AccessRequest.UsersRead))
+        {
+            <a href="/Users/Index">@Resources.ManageUsers</a>
+        }
+
+        @if (ViewBag.User.HasAccess(AccessRequest.DataRead))
+        {
+            <a href="/Data/Index">@Resources.ManageData</a>
+        }
+
+        @if (ViewBag.User.HasAccess(AccessRequest.UserRolesRead) ||
+            ViewBag.User.HasAccess(AccessRequest.BrandsRead) ||
+            ViewBag.User.HasAccess(AccessRequest.CountriesRead) ||
+            ViewBag.User.HasAccess(AccessRequest.LanguagesRead))
+        {
+            <a href="/Home/Admin">@Resources.SystemConfiguration</a>
+        }
+    </div>
+}

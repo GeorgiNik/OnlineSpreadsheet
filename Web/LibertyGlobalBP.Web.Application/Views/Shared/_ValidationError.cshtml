@@ -1,0 +1,19 @@
+﻿@model IEnumerable<string>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="alert alert-danger" role="alert" id="validation-error-temp-data">
+            @foreach (var error in Model)
+            {
+                @error
+                <br />
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    setTimeout(function () {
+        $('#validation-error-temp-data').fadeOut();
+    }, 5000);
+</script>

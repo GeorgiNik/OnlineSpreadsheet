@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "Content/layout.css",
+    "inputFile": "Content/layout.less"
+  },
+  {
+    "outputFile": "Content/kendo.css",
+    "inputFile": "Content/kendo.less"
+  },
+  {
+    "outputFile": "Content/site.css",
+    "inputFile": "Content/site.less"
+  },
+  {
+    "outputFile": "Content/emails.css",
+    "inputFile": "Content/emails.less"
+  },
+  {
+    "outputFile": "Content/outlookSpecific.css",
+    "inputFile": "Content/outlookSpecific.less"
+  }
+]

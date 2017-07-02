@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = Resources.Configuration;
+}
+
+@using LibertyGlobalBP.Web.Application.Utilities
+
+@model IndexPageVM
+@if (ViewBag.User.HasAccess(AccessRequest.ConfigurationRead))
+{
+    <div class="administration-sidebar">
+        @{
+            var ajaxOptions = new AjaxOptions()
+            {
+                HttpMethod = "GET",
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "administration-content",
+                OnBegin = "startLoading",
+                OnSuccess = "stopLoading",
+            };
+        }
+
+        @if (ViewBag.User.HasAccess(AccessRequest.UserRolesRead))
+        {
+            @Ajax.RawActionLink($"<img class='library-icon' src='../Images/Icons/people_customers_users.svg' /> {Resources.UserRoles}", "Index", "UserRoles", new { }, ajaxOptions, new { @class = "configuration-navigation", id = Section.UserRoles })
+        }
+    </div>
+
+    <div class="administration-content" id="administration-content"></div>
+
+    @section scripts{
+        <script type="text/javascript">
+            function getParameterByName(name) {
+                var url = window.location.href;
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+            $(function () {
+                $('.configuration-navigation').click(function (e) {
+                    if (e.which == 1) {
+                        $('.configuration-navigation.active').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                });
+
+                $('a[href*="Admin"]').addClass('active');
+
+                $('.administration-sidebar').children('.configuration-navigation').first().click();
+                $('.administration-sidebar').children('.configuration-navigation').first().addClass('active');
+            });
+
+            function startLoading() {
+                $('#administration-content').before('<div class="grid-loading"></div>')
+                $('#administration-content').hide();
+            }
+
+            function stopLoading() {
+                $('.grid-loading').remove();
+                $('#administration-content').show();
+            }
+        </script>
+    }
+}

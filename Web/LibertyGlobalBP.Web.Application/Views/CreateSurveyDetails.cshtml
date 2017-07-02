@@ -1,0 +1,117 @@
+﻿@model RecommendIT.Web.ViewModels.SurveyBuilder.SurveyVM
+@{
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm("CreateSurveyDetails", "SurveyBuilder", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row survey-builder-nav">
+        <div class="col-md-2">
+            <span class="title">@Resources.SurveyBuilder</span>
+        </div>
+        <div class="col-md-6 col-md-offset-2">
+            <div class="steps active">1. @Resources.SurveyDetails.ToUpper()</div>@*
+            *@<div class="steps">2. @Resources.Questionnaire.ToUpper()</div>@*
+            *@<div class="steps">3. @Resources.Customers.ToUpper()</div>@*
+            *@<div class="steps">4. @Resources.FollowUps.ToUpper()</div>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary full-width" type="submit">
+                Next step
+            </button>
+        </div>
+    </div>
+    <br />
+    <div>
+        @Html.EditorFor(m => m.Name, new { htmlAttributes = new { style = "height:50px" }, })
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-3">
+            @Html.LabelFor(m => m.LanguageIds)
+            @(
+            Html.Kendo().MultiSelect()
+                .Name("LanguageIds")
+                .DataValueField("ID")
+                .DataTextField("Name")
+                .DataSource(datasource =>
+                {
+                    datasource.Read(read => read.Action("Languages", "Dropdowns"));
+                })
+            )
+        </div>
+        <div class="col-md-3">
+            @Html.LabelFor(m => m.Workflow)
+            @(
+            Html.Kendo().DropDownList()
+                .Name("Workflow")
+                .DataValueField("ID")
+                .DataTextField("Name")
+                .DataSource(datasource =>
+                {
+                    datasource.Read(read => read.Action("Workflows", "Dropdowns"));
+                })
+                .HtmlAttributes(new { @class = "full-width" })
+            )
+        </div>
+        <div class="col-md-2">
+            @Html.LabelFor(m => m.StartDate)
+            @(
+            Html.Kendo().DatePicker()
+                .Name("StartDate")
+                .Min(DateTime.Now)
+                .Value(Model == null ? string.Empty : Model.StartDate.ToShortDateString())
+                .Events(e => e.Change("startDatepicker"))
+                .HtmlAttributes(new { style = "width:100%" })
+            )
+        </div>
+        <div class="col-md-2">
+            @Html.LabelFor(m => m.EndDate)
+            @(
+            Html.Kendo().DatePicker()
+                .Name("EndDate")
+                .Min(DateTime.Now.AddDays(1))
+                .Value(Model == null ? string.Empty : Model.EndDate.ToShortDateString())
+                .Events(e => e.Change("endDatepicker"))
+                .HtmlAttributes(new { style = "width:100%" })
+            )
+        </div>
+        <div class="col-md-2">
+            @Html.LabelFor(m => m.Reminder)
+            @(Html.Kendo().NumericTextBoxFor(m => m.Reminder)
+            .Min(0)
+            .Max(int.MaxValue)
+            .HtmlAttributes(new { style = "width:100%" })
+            )
+        </div>
+    </div>
+}
+
+@section scripts{
+    <script type="text/javascript">
+        function startDatepicker() {
+            var endPicker = $("#EndDate").data("kendoDatePicker"),
+                startDate = this.value();
+
+            if (startDate) {
+                startDate = new Date(startDate);
+                startDate.setDate(startDate.getDate() + 1);
+                endPicker.min(startDate);
+            }
+        }
+
+        function endDatepicker() {
+            var startPicker = $("#StartDate").data("kendoDatePicker"),
+                endDate = this.value();
+
+            if (endDate) {
+                endDate = new Date(endDate);
+                endDate.setDate(endDate.getDate() - 1);
+                startPicker.max(endDate);
+            }
+        }
+
+    </script>
+}

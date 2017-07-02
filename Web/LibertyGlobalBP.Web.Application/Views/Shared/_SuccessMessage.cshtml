@@ -1,0 +1,10 @@
+﻿@if (null != TempData["SuccessMessage"])
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-success" role="alert">
+                @Html.Raw(TempData["SuccessMessage"])
+            </div>
+        </div>
+    </div>
+}

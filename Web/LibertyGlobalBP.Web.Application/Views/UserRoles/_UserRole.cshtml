@@ -1,0 +1,55 @@
+﻿@model LibertyGlobalBP.Web.ViewModels.UserRoles.UserRoleVM
+
+<div class="modal-body">
+    <div id="validation-result"></div>
+    @Html.HiddenFor(m => m.ID)
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name, new { @class = "control-label col-md-4" })
+        <div class="col-md-8">
+            @Html.EditorFor(m => m.Name)
+            @Html.ValidationMessageFor(m => m.Name)
+        </div>
+    </div>
+
+    <div class="user-roles-tabstrip">
+        <br />
+        <table class="table roles-table">
+            <tbody>
+                <tr>
+                    <td>@Html.Label(Resources.ProjectFiles, new { @class = "bold" })</td>
+                    <td class="read-edit-col">@Resources.Read @Html.Kendo().CheckBoxFor(m => m.ProjectFilesRead).HtmlAttributes(new { @class = "read-checkbox", id = "project-files" })</td>
+                    <td class="read-edit-col">@Resources.Manage @Html.Kendo().CheckBoxFor(m => m.ProjectFilesEdit).HtmlAttributes(new { @class = "edit-checkbox", data_checkbox_target = "project-files" })</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Html.Label(Resources.Configuration, new { @class = "bold" })</td>
+                    <td class="read-edit-col">@Resources.Read @Html.Kendo().CheckBoxFor(m => m.ConfigurationRead).HtmlAttributes(new { @class = "read-checkbox", id = "configuration" })</td>
+                    <td class="read-edit-col">@Resources.Manage @Html.Kendo().CheckBoxFor(m => m.ConfigurationEdit).HtmlAttributes(new { @class = "edit-checkbox", data_checkbox_target = "configuration" })</td>
+
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;@Html.Label(Resources.ManageUsers, new { @class = "" })</td>
+                    <td class="read-edit-col">@Resources.Read @Html.Kendo().CheckBoxFor(m => m.UsersRead).HtmlAttributes(new { @class = "read-checkbox sub-configuration", id = "manage-users" })</td>
+                    <td class="read-edit-col">@Resources.Manage @Html.Kendo().CheckBoxFor(m => m.UsersEdit).HtmlAttributes(new { @class = "edit-checkbox sub-configuration", data_checkbox_target = "manage-users" })</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;@Html.Label(Resources.UserRoles, new { @class = "" })</td>
+                    <td>@Resources.Read @Html.Kendo().CheckBoxFor(m => m.UserRolesRead).HtmlAttributes(new { @class = "read-checkbox sub-configuration", id = "user-roles" })</td>
+                    <td>@Resources.Manage @Html.Kendo().CheckBoxFor(m => m.UserRolesEdit).HtmlAttributes(new { @class = "edit-checkbox sub-configuration", data_checkbox_target = "user-roles" })</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <hr class="delimiter" />
+    <button type="submit" id="btn-save" class="btn btn-primary">@Resources.Save.ToUpper()</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">@Resources.Discard</button>
+</div>
+
+@Scripts.Render("~/Scripts/Custom/UserRoles/rolesPopup.js")
+@Scripts.Render(Bundles.ModalValidation)

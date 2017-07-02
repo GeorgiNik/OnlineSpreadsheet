@@ -1,0 +1,22 @@
+﻿@model LibertyGlobalBP.Web.Application.Emails.ViewModels.ExternalEmail
+
+To: @Model.To
+Cc: @Model.Cc
+Bcc: @Model.Bcc
+From: @Model.From
+Subject: @Model.Subject
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    @Html.InlineStyles("~/Content/emails")
+    <!--[if gte mso 9]>
+        @Html.InlineStyles("~/Content/outlookSpecific")
+    <![endif]-->
+</head>
+<body class="container">
+    @Html.Raw(Model.Body)
+    <br />
+    @Html.Raw(Model.Signature)
+</body>
+</html>

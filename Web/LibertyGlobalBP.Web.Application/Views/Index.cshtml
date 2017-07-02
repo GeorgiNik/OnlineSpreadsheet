@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h3>Survey builder</h3>
+<br />
+<div class="row survey-builder-index-icons">
+    <div class="col-md-4">
+        <a href="/SurveyBuilder/SurveyDetails" class="btn">
+            <i class="fa fa-file-o fa-5x"></i>
+            <br />
+            @Resources.CreateSurvey
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="btn" disabled>
+            <i class="fa fa-database fa-5x"></i>
+            <br />
+            @Resources.StartFromTemplate
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="btn" disabled>
+            <i class="fa fa-copy fa-5x fa-flip-horizontal"></i>
+            <br />
+            @Resources.CopyExistingSurvey
+        </a>
+    </div>
+</div>
+

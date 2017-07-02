@@ -1,0 +1,22 @@
+﻿@using LibertyGlobalBP.Localization.Resources
+@model LibertyGlobalBP.Web.ViewModels.Users.UserVM
+
+<div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <div class="modal-header">@Resources.Add</div>
+        @using (Ajax.BeginForm("Create", "Users",
+            new { },
+            new AjaxOptions
+            {
+                HttpMethod = "POST",
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "validation-result"
+            },
+            new { @class = "form-horizontal", id = "generic-form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(false, string.Empty, new { @class = "text-danger" })
+            @Html.Partial("_User", Model)
+        }
+    </div>
+</div>
