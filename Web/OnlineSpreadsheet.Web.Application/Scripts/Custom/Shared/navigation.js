@@ -5,17 +5,11 @@
 
     var admin = ['users', 'customers', 'data', 'keywords', 'admin'];
     var projectFiles = ['projectfiles'];
-    var countryScorecard = ['countryscorecard'];
     var home = ['home'];
     
     if (projectFiles.indexOf(url) >= 0) {
-        $("#content").css("padding-top", "60px");
+        $("#content").css("padding-top", "80px");
         $('#project-files').addClass('active-drop');
-        $("#wrapper").removeClass('background-image');
-    }
-    else if (countryScorecard.indexOf(url) >= 0) {
-        $("#content").css("padding-top", "60px");
-        $('#country-scorecard').addClass('active-drop');
         $("#wrapper").removeClass('background-image');
     }
     else if (admin.indexOf(url) >= 0 || admin.indexOf(actionUrl)>=0) {

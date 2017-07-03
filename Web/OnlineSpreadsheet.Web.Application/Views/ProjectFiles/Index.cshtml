@@ -15,6 +15,7 @@
             columns.Bound(e => e.ModifiedOn).Format("{0:dd/MM/yyyy}").Filterable(f => f.Multi(true).Search(true));
             if (ViewBag.User.HasAccess(AccessRequest.ProjectFilesEdit))
             {
+
                 columns.Bound(c => c.ID)
                     .Title(string.Empty)
                     .Filterable(false)
@@ -77,6 +78,11 @@
                       columns.Bound(o => o.ModifiedOn).Format("{0:dd/MM/yyyy}");
                       if (ViewBag.User.HasAccess(AccessRequest.ProjectFilesEdit))
                       {
+                          columns.Bound(c => c.ID)
+                              .Title(string.Empty)
+                              .Filterable(false)
+                              .ClientTemplate("<a class='modal-link k-button' href='/ProjectFiles/Edit/\\#= ID \\#'><i class='fa fa-lg fa-file-excel-o'></i></a>")
+                              .Width(15);
                           columns.Bound(c => c.ID)
                                   .Title(string.Empty)
                                   .Filterable(false)

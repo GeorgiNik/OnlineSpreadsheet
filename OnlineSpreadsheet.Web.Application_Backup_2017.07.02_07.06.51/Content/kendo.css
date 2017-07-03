@@ -1,0 +1,329 @@
+﻿.k-primary {
+  background-color: #E95E35;
+  border-color: #E95E35;
+}
+.k-primary:hover,
+.k-primary:active,
+.k-primary:focus,
+.k-primary:visited {
+  background-color: #E95E35;
+  border-color: #E95E35;
+}
+.k-textbox {
+  border-radius: 5px;
+  width: 100%;
+}
+.k-textbox:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px #E95E35;
+}
+.k-checkbox-label::before {
+  border-radius: 3px;
+}
+.k-checkbox:checked + .k-checkbox-label::before {
+  color: white;
+  border-radius: 3px;
+  border-color: #E95E35;
+  background: #E95E35;
+}
+.k-textbox[disabled] {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+.k-textbox[disabled]:hover {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+.k-grid {
+  border: none;
+  box-shadow: none;
+}
+.k-grid .k-grid-header .k-grid-header-wrap {
+  border-right: 0;
+}
+.k-grid .k-grid-toolbar {
+  background: white;
+  border: none;
+  padding: 25px 0 20px 0;
+}
+.k-grid .k-grid-toolbar a {
+  float: right;
+}
+.k-grid .grid-manage-label {
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+  margin-right: 15px;
+}
+.k-grid .grid-search {
+  width: 250px;
+  display: inline-table;
+  height: 36px;
+}
+.k-grid .grid-search .input-group-addon {
+  background: #f2f2f2;
+}
+.k-grid .grid-search .form-control {
+  height: 36px;
+}
+.k-grid .k-grid-delete-selection,
+.k-grid .k-grid-delete-selection-second {
+  background: #E95E35;
+  color: white;
+  padding: 5px 15px;
+  border-color: #E95E35;
+}
+.k-grid .k-grid-excel {
+  background: #207446;
+  color: white;
+  padding: 5px 15px;
+  border-color: #207446;
+}
+.k-grid .k-grid-excel:hover,
+.k-grid .k-grid-excel:active {
+  background: #207446;
+  border-color: #207446;
+}
+.k-grid .k-grid-add {
+  background: #E95E35;
+  color: white;
+  padding: 5px 15px;
+  border-color: #E95E35;
+}
+.k-grid .k-grid-add:hover {
+  border-color: #E95E35;
+}
+.k-grid .k-grid-add:active {
+  background: #E95E35;
+  box-shadow: none;
+}
+.k-grid .k-grid-add:focus {
+  box-shadow: none !important;
+}
+.k-grid .k-grid-add .k-add {
+  display: none;
+}
+.k-grid .k-file {
+  text-align: left;
+}
+.k-grid .k-file .k-icon {
+  float: left;
+  top: 12px;
+}
+.k-grid .k-file .k-upload-action .k-icon {
+  top: 2px;
+}
+.k-grid .k-filename {
+  max-width: 200px;
+  min-width: 0;
+}
+.k-grid thead tr th.k-header {
+  border-radius: 0;
+  background: white;
+  border-width: 0 0 1px 0;
+  padding: 12px 0.6em;
+}
+.k-grid thead tr th.k-header:hover,
+.k-grid thead tr th.k-header:last-child,
+.k-grid thead tr th.k-header:first-child {
+  border-radius: 0 !important;
+}
+.k-grid thead tr th.k-header .k-grid-filter {
+  float: left;
+}
+.k-grid thead tr th.k-header .k-link {
+  margin-left: 18px;
+  margin-right: 0;
+}
+.k-grid tbody tr {
+  height: 41px;
+}
+.k-grid tbody tr.active td .k-button {
+  display: inline-block !important;
+}
+.k-grid tbody tr:nth-child(odd) {
+  background: #f3f4f6;
+}
+.k-grid tbody tr:nth-child(even) {
+  background: white;
+}
+.k-grid tbody tr:hover {
+  color: black;
+}
+.k-grid tbody tr:hover td .k-button {
+  display: inline-block !important;
+}
+.k-grid tbody .k-state-selected,
+.k-grid tbody .k-state-selected:hover td {
+  background: #E95E35 !important;
+}
+.k-grid tbody td {
+  border: none;
+}
+.k-grid tbody td .k-button {
+  min-width: 34px;
+  color: #3b3b3b;
+  background: none;
+  border: none;
+  /*display: none;*/
+}
+.k-grid tbody td .k-button:hover,
+.k-grid tbody td .k-button:active,
+.k-grid tbody td .k-button:focus,
+.k-grid tbody td .k-button:visited {
+  background-color: none;
+  border: none;
+}
+.k-grid tbody td .k-button.btn-manage {
+  background: inherit !important;
+  color: #3b3b3b;
+  border: none;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: normal;
+}
+.k-grid tbody td .k-button.btn-manage:focus,
+.k-grid tbody td .k-button.btn-manage:active {
+  line-height: normal;
+  box-shadow: none !important;
+}
+.k-grid tbody td .k-button .k-delete,
+.k-grid tbody td .k-button .k-edit,
+.k-grid tbody td .k-button .k-update,
+.k-grid tbody td .k-button .k-cancel {
+  display: none;
+}
+.k-grid tbody td .grid-modal-btn {
+  border: 1px solid #E95E35;
+  color: #E95E35;
+  padding: 6px;
+  font-weight: bold;
+}
+.k-grid tbody td .grid-modal-btn:hover {
+  border: 1px solid #E95E35;
+  background: #E95E35;
+  color: white;
+  text-decoration: none !important;
+}
+.k-grid .k-link {
+  border-radius: 0;
+}
+.k-grid .k-state-selected {
+  border-radius: 0;
+  background: #E95E35;
+  border: 1px solid #E95E35;
+}
+.k-grid .k-grid-pager {
+  width: 100%;
+  background: white;
+  border-width: 1px 0 0 0;
+  box-shadow: none;
+  padding-top: 50px !important;
+}
+.k-grid .k-grid-pager .k-pager-sizes .k-dropdown-wrap {
+  border-radius: 0;
+  border-color: #B0B0B0;
+}
+.k-grid .k-grid-pager .k-link {
+  margin: 0 2px;
+  border: 1px solid #B0B0B0;
+  color: #B0B0B0;
+}
+.k-grid .k-grid-pager .k-link:hover {
+  color: black;
+}
+.k-grid .k-grid-pager .k-pager-nav.k-pager-last {
+  border-radius: 0;
+}
+.k-popup.k-list-container {
+  padding: 0;
+}
+.k-popup.k-list-container .k-list-scroller .k-list .k-item {
+  border-radius: 0;
+}
+.k-popup.k-filter-menu .k-multicheck-wrap .k-item {
+  line-height: 1.43em;
+}
+.k-popup.k-filter-menu .k-multicheck-wrap .k-label {
+  font-weight: normal;
+}
+.k-popup.k-filter-menu .k-multicheck-wrap .k-label input[type="checkbox"] {
+  margin: 4px 4px 0 0;
+}
+.k-popup.k-filter-menu .k-textbox {
+  border-radius: 0;
+}
+.k-popup.k-filter-menu .k-textbox .k-i-search {
+  display: none;
+}
+.k-popup.k-filter-menu .k-textbox:hover {
+  background-color: none;
+}
+.k-popup.k-filter-menu .k-textbox.k-space-right {
+  padding: 0;
+}
+.k-popup.k-filter-menu .k-window .k-header {
+  text-align: center;
+  padding: 15px 0;
+}
+.k-popup.k-filter-menu .k-window .k-dropdown.k-header {
+  padding: 0;
+}
+.grid-popup-edit .k-window-titlebar {
+  /*display: none;*/
+}
+.grid-popup-edit .k-header .k-window-title {
+  text-align: left;
+}
+.grid-popup-edit .k-popup-edit-form .k-edit-form-container {
+  width: 100%;
+}
+.grid-popup-edit .k-popup-edit-form .k-edit-form-container .k-edit-buttons {
+  text-align: left;
+  padding: 20px;
+}
+.grid-popup-edit .k-popup-edit-form .k-edit-form-container .k-edit-buttons .btn {
+  margin: 0 10px;
+}
+.k-dropdown.k-header {
+  text-align: left;
+}
+.k-dropdown .k-input {
+  padding-left: 0.3em;
+}
+.k-multiselect .k-multiselect-wrap li {
+  padding: 0.01em 1.6em 0.01em 0.4em;
+}
+.k-multiselect .k-multiselect-wrap .k-select {
+  padding: 0.01em 0.2em;
+}
+.k-multiselect .k-button {
+  background: #E95E35;
+  border-color: #E95E35;
+  margin: 3px;
+}
+.k-multiselect .k-button.k-state-hover {
+  background: #E95E35;
+  border-color: #E95E35;
+}
+.projectFilesGrid tr.k-master-row {
+  background-color: #FCDECD !important;
+}
+.projectFilesGrid tr.k-master-row:hover,
+.projectFilesGrid tr.k-master-row:active,
+.projectFilesGrid tr.k-master-row:focus,
+.projectFilesGrid tr.k-master-row:visited {
+  cursor: pointer;
+}
+.projectFilesGrid tr.k-state-selected {
+  background-color: #E95E35 !important;
+  color: #3b3b3b !important;
+}
+.projectFilesGrid tr.k-state-selected:hover,
+.projectFilesGrid tr.k-state-selected:active,
+.projectFilesGrid tr.k-state-selected:focus,
+.projectFilesGrid tr.k-state-selected:visited {
+  color: #3b3b3b !important;
+}

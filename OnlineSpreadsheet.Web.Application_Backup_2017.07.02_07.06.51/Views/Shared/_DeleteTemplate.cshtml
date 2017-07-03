@@ -1,0 +1,41 @@
+﻿<script type="text/x-kendo-template" id="windowTemplate">
+    <p>
+        @Resources.DeleteConfirmation <strong>#= Name #</strong>?
+    </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="text-right">
+        <button class="k-button" id="btnCancel">@Resources.Cancel</button>
+        <button class="k-button k-primary" id="btnDelete">@Resources.Delete</button>
+    </div>
+</script>
+
+<div id="window"></div>
+
+<script type="text/javascript">
+    function editOrAdd(e) {
+        var container = e.container.parent();
+        container.addClass('grid-popup-edit')
+
+        var update = container.find('.k-grid-update');
+        update.html('@Resources.Save.ToUpper()');
+        update.addClass('btn btn-primary');
+        update.removeClass('k-button');
+
+        var cancel = container.find('.k-grid-cancel');
+        cancel.html('@Resources.Discard');
+        cancel.addClass('btn btn-default');
+        cancel.removeClass('k-button');
+
+        if (e.model.isNew()) {
+            $(".k-window-title").text($('.k-grid-add').text());
+        } else {
+            $(".k-window-title").text('@Resources.Edit');
+        }
+    }
+</script>

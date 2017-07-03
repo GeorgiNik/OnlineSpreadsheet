@@ -2328,4 +2328,7 @@
   <data name="ExtensionError" xml:space="preserve">
     <value>Only .xlsx files can be uploaded!</value>
   </data>
+  <data name="ExcelFilesRequired" xml:space="preserve">
+    <value>Only excel files are allowed with .xlsx extension</value>
+  </data>
 </root>

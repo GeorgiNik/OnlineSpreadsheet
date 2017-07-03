@@ -1,0 +1,60 @@
+﻿@model OnlineSpreadsheet.Data.Models.SurveyResponse
+<br />
+<table class="table table-condensed client-info-table">
+    <thead bgcolor="#E7E6E6">
+        <tr bgcolor="#E7E6E6">
+            <td colspan="2" style="font-weight:bold;">@Resources.ClientInformation:</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.SurveyReceivedOn</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@Model.InvitationSentDate</td>
+        </tr>
+        <tr class="even" bgcolor="#F0FAFF">
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.ClientCnpCopyPaste</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;"></td>
+        </tr>
+        <tr>
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.ClientName</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@Model.Touchpoint.FirstName</td>
+        </tr>
+        <tr class="even" bgcolor="#F0FAFF">
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.ClientSurname</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@Model.Touchpoint.LastName</td>
+        </tr>
+        <tr>
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.ClientFirstPhone</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@Model.Touchpoint.Phone</td>
+        </tr>
+        <tr class="even" bgcolor="#F0FAFF">
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.ClientSecondPhone</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@Model.Touchpoint.Phone2</td>
+        </tr>
+        <tr>
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.ClientThirdPhone</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@Model.Touchpoint.Phone3</td>
+        </tr>
+        <tr class="even" bgcolor="#F0FAFF">
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.Email</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@Model.Touchpoint.Email</td>
+        </tr>
+        <tr>
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.AgentNumber</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@(Model.Transaction?.AgencyNumber)</td>
+        </tr>
+        <tr class="even" bgcolor="#F0FAFF">
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.AgentName</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@(Model.Transaction?.AgentFirstName)</td>
+        </tr>
+        <tr>
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.AgentSurname</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@(Model.Transaction?.AgentSurname)</td>
+        </tr>
+        <tr class="even" bgcolor="#F0FAFF">
+            <td class="title" style="color:#3399CC; font-weight: bold; border-right: 1px solid #E7E6E6;border-bottom: 1px solid #E7E6E6; width:200px;">@Resources.Agency</td>
+            <td class="description" style="border-right: 1px solid #E7E6E6; border-bottom: 1px solid #E7E6E6; width:400px;">@(Model.Transaction?.AgencyName)</td>
+        </tr>
+    </tbody>
+</table>
+<br />

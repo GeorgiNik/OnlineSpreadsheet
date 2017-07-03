@@ -2,7 +2,16 @@
 
 @Scripts.Render("~/bundles/dataFilesUpload")
 @Scripts.Render("~/bundles/dataFilesError")
-
+<script>
+    var onSelect = function (e) {
+        $.each(e.files, function (index, value) {
+            if (value.extension != ".xlsx") {
+                e.preventDefault();
+                alert("Please upload .xlsx files only");
+            }
+        });
+    };
+</script>
 <div class="modal-dialog modal-sm">
     <div class="modal-content">
         <div class="modal-header">
@@ -46,6 +55,7 @@
                             .Remove("Remove", "ProjectFiles")
                             .AutoUpload(true))
                         .Events(x => x
+                            .Select("onSelect")
                             .Upload("onUpload")
                             .Error("fileUploadFail"))
                     )

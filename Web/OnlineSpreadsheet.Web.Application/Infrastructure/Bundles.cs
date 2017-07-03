@@ -4,6 +4,8 @@
     {
         public const string ModalValidation = "~/bundles/modalValidation";
 
+        public const string Modals = "~/bundles/modals";
+
         public const string KendoGridFunctions = "~/bundles/kendoGridFunctions";
         
         public const string PagedListCss = "~/Content/pagedList";

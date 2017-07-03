@@ -36,5 +36,7 @@
         void UpdateFolder(FolderVM vm);
 
         void UploadFiles(IEnumerable<HttpPostedFileBase> files, int folderId);
+
+        int Count();
     }
 }

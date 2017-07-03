@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   id="svg6050"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   viewBox="0 0 48 48"
+   sodipodi:docname="camera.svg">
+  <defs
+     id="defs6052" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7"
+     inkscape:cx="36.429368"
+     inkscape:cy="23.054"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1086"
+     inkscape:window-height="1001"
+     inkscape:window-x="772"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata6055">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <g
+       id="g3534"
+       transform="matrix(1.5,0,0,-1.5,33,4.5)">
+      <path
+         d="m 0,0 -12,0 -2.4,-4 -4.6,0 c -1,0 -3,-1 -3,-2.969 L -22,-23 c 0,-1.656 1.5,-3 2.791,-3 l 26.271,0 C 8.375,-26 10,-24.594 10,-23.031 L 10,-7 c 0,1 -1,3 -3,3 L 2.4,-4 0,0 Z M -1.066,-2 0.719,-5.029 1.269,-6 2.4,-6 7,-6 c 0.705,0 0.99,-0.921 1,-1 L 8,-23.031 C 8,-23.426 7.36,-23.978 7.062,-24 l -26.265,0 c -0.231,0.019 -0.797,0.47 -0.797,1 l 0,16.031 c 0,0.634 0.851,0.953 1,0.969 l 4.6,0 1.132,0 0.583,0.971 L -10.868,-2 -1,-2"
+         style="fill:#31353a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path3536"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       d="M 24,15 C 18.201,15 13.5,19.701 13.5,25.5 13.5,31.299 18.201,36 24,36 29.799,36 34.5,31.299 34.5,25.5 34.5,19.701 29.799,15 24,15 m 0,3 c 4.1355,0 7.5,3.3645 7.5,7.5 0,4.1355 -3.3645,7.5 -7.5,7.5 -4.1355,0 -7.5,-3.3645 -7.5,-7.5 0,-4.1355 3.3645,-7.5 7.5,-7.5"
+       style="fill:#31353a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3540"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

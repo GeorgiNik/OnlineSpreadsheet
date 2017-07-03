@@ -1,0 +1,435 @@
+﻿@main-color: #E95E35;
+@main-light: #FCDECD;
+@main-lightest: #ebf5f7;
+@main-default: #e4eff2;
+@green: #48c27e;
+@white: #f9f9f9;
+@orange: #E95E35;
+@purple: #9766b7;
+@menu: #3b3b3b;
+@menu-hover: #303030;
+@excel-green: #207446;
+@menu-text: #B0B0B0;
+@black: #3b3b3b;
+@background: #f3f4f6;
+@background-lightest: #f9f9f9;
+@background-dark: #eaecef;
+@survey-orange: #E95E35;
+@survey-green: #8FB850;
+@gray: #F9F9F9;
+
+.k-primary {
+    background-color: @main-color;
+    border-color: @main-color;
+
+    &:hover, &:active, &:focus, &:visited {
+        background-color: @main-color;
+        border-color: @main-color;
+    }
+}
+
+.k-textbox {
+    border-radius: 5px;
+    width: 100%;
+
+    &:focus {
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px @main-color;
+    }
+}
+
+.k-checkbox-label::before {
+    border-radius: 3px;
+}
+
+.k-checkbox:checked + .k-checkbox-label::before {
+    color: white;
+    border-radius: 3px;
+    border-color: @main-color;
+    background: @main-color;
+}
+
+.k-textbox[disabled] {
+    cursor: not-allowed;
+    background-color: #eee;
+    opacity: 1;
+
+    &:hover {
+        cursor: not-allowed;
+        background-color: #eee;
+        opacity: 1;
+    }
+}
+
+.k-grid {
+    border: none;
+    box-shadow: none;
+
+    .k-grid-header .k-grid-header-wrap {
+        border-right: 0;
+    }
+
+    .k-grid-toolbar {
+        background: white;
+        border: none;
+        padding: 25px 0 20px 0;
+
+        a {
+            float: right;
+        }
+    }
+
+    .grid-manage-label {
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+        top: -10px;
+        margin-right: 15px;
+    }
+
+    .grid-search {
+        width: 250px;
+        display: inline-table;
+        height: 36px;
+
+        .input-group-addon {
+            background: #f2f2f2;
+        }
+
+        .form-control {
+            height: 36px;
+        }
+    }
+
+    .k-grid-delete-selection, .k-grid-delete-selection-second {
+        background: @main-color;
+        color: white;
+        padding: 5px 15px;
+        border-color: @main-color;
+    }
+
+    .k-grid-excel {
+        background: @excel-green;
+        color: white;
+        padding: 5px 15px;
+        border-color: @excel-green;
+
+        &:hover, &:active {
+            background: @excel-green;
+            border-color: @excel-green;
+        }
+    }
+
+    .k-grid-add {
+        background: @orange;
+        color: white;
+        padding: 5px 15px;
+        border-color: @orange;
+
+        &:hover {
+            border-color: @orange;
+        }
+
+        &:active {
+            background: @orange;
+            box-shadow: none;
+        }
+
+        &:focus {
+            box-shadow: none !important;
+        }
+
+        .k-add {
+            display: none;
+        }
+    }
+
+    .k-file {
+        text-align: left;
+
+        .k-icon {
+            float: left;
+            top: 12px;
+        }
+
+        .k-upload-action .k-icon {
+            top: 2px;
+        }
+    }
+
+    .k-filename {
+        max-width: 200px;
+        min-width: 0;
+    }
+
+    thead {
+        tr {
+            th.k-header {
+                border-radius: 0;
+                background: white;
+                border-width: 0 0 1px 0;
+                padding: 12px 0.6em;
+
+                &:hover, &:last-child, &:first-child {
+                    border-radius: 0 !important;
+                }
+
+                .k-grid-filter {
+                    float: left;
+                }
+
+                .k-link {
+                    margin-left: 18px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            height: 41px;
+        }
+
+        tr.active {
+            td .k-button {
+                display: inline-block !important;
+            }
+        }
+
+        tr:nth-child(odd) {
+            background: @background;
+        }
+
+        tr:nth-child(even) {
+            background: white;
+        }
+
+        tr:hover {
+            color: black;
+
+
+            td .k-button {
+                display: inline-block !important;
+            }
+        }
+
+        .k-state-selected, .k-state-selected:hover td {
+            background: @main-color !important;
+        }
+
+        td {
+            border: none;
+
+            .k-button {
+                min-width: 34px;
+                color: @black;
+                background: none;
+                border: none;
+                /*display: none;*/
+                &:hover, &:active, &:focus, &:visited {
+                    background-color: none;
+                    border: none;
+                }
+
+                &.btn-manage {
+                    background: inherit !important;
+                    color: @black;
+                    border: none;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    line-height: normal;
+
+                    &:focus, &:active {
+                        line-height: normal;
+                        box-shadow: none !important;
+                    }
+                }
+
+                .k-delete, .k-edit, .k-update, .k-cancel {
+                    display: none;
+                }
+            }
+
+            .grid-modal-btn {
+                border: 1px solid @main-color;
+                color: @main-color;
+                padding: 6px;
+                font-weight: bold;
+
+                &:hover {
+                    border: 1px solid @main-color;
+                    background: @main-color;
+                    color: white;
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+
+    .k-link {
+        border-radius: 0;
+    }
+
+    .k-state-selected {
+        border-radius: 0;
+        background: @main-color;
+        border: 1px solid @main-color;
+    }
+
+    .k-grid-pager {
+        width: 100%;
+        background: white;
+        border-width: 1px 0 0 0;
+        box-shadow: none;
+        padding-top: 50px !important;
+
+        .k-pager-sizes .k-dropdown-wrap {
+            border-radius: 0;
+            border-color: @menu-text;
+        }
+
+        .k-link {
+            margin: 0 2px;
+            border: 1px solid @menu-text;
+            color: @menu-text;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        .k-pager-nav.k-pager-last {
+            border-radius: 0;
+        }
+    }
+}
+
+.k-popup {
+    &.k-list-container {
+        padding: 0;
+
+        .k-list-scroller .k-list .k-item {
+            border-radius: 0;
+        }
+    }
+
+    &.k-filter-menu {
+        .k-multicheck-wrap {
+            .k-item {
+                line-height: 1.43em;
+            }
+
+            .k-label {
+                font-weight: normal;
+
+                input[type="checkbox"] {
+                    margin: 4px 4px 0 0;
+                }
+            }
+        }
+
+        .k-textbox {
+            border-radius: 0;
+
+            .k-i-search {
+                display: none;
+            }
+        }
+
+        .k-textbox:hover {
+            background-color: none;
+        }
+
+        .k-textbox.k-space-right {
+            padding: 0;
+        }
+
+        .k-window {
+            .k-header {
+                text-align: center;
+                padding: 15px 0;
+            }
+
+            .k-dropdown.k-header {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.grid-popup-edit {
+    .k-window-titlebar {
+        /*display: none;*/
+    }
+
+    .k-header .k-window-title {
+        text-align: left;
+    }
+
+    .k-popup-edit-form {
+        .k-edit-form-container {
+            width: 100%;
+
+            .k-edit-buttons {
+                text-align: left;
+                padding: 20px;
+
+                .btn {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+.k-dropdown {
+    &.k-header {
+        text-align: left;
+    }
+
+    .k-input {
+        padding-left: 0.3em;
+    }
+}
+
+.k-multiselect {
+    .k-multiselect-wrap {
+        li {
+            padding: 0.01em 1.6em 0.01em 0.4em;
+        }
+
+        .k-select {
+            padding: 0.01em 0.2em;
+        }
+    }
+
+    .k-button {
+        background: @main-color;
+        border-color: @main-color;
+        margin: 3px;
+
+        &.k-state-hover {
+            background: @main-color;
+            border-color: @main-color;
+        }
+    }
+}
+
+.projectFilesGrid {
+    tr.k-master-row {
+        background-color: @main-light !important;
+
+        &:hover, &:active, &:focus, &:visited {
+            cursor: pointer;
+        }
+    }
+
+    tr.k-state-selected {
+        background-color: @main-color !important;
+        color: @black !important;
+
+        &:hover, &:active, &:focus, &:visited {
+            color: @black !important;
+        }
+    }
+}

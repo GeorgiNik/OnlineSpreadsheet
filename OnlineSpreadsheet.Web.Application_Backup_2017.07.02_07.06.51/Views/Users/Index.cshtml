@@ -1,0 +1,102 @@
+﻿@using OnlineSpreadsheet.Data.Models
+@using OnlineSpreadsheet.Localization.Resources
+@using OnlineSpreadsheet.Web.Application.Infrastructure
+@model OnlineSpreadsheet.Web.ViewModels.Users.IndexVM
+
+@{
+    ViewBag.Title = Resources.Users;
+}
+
+<script src="~/Scripts/Libraries/jszip.js"></script>
+@if (ViewBag.User.HasAccess(AccessRequest.UsersRead))
+{
+    @Html.Partial("_DeleteTemplate")
+    @Html.Partial("_MultipleDeleteTemplate")
+
+    @Scripts.Render(Bundles.KendoGridFunctions)
+
+    <script>
+        var exportFlag = false;
+
+        function excelExport(e) {
+            if (!exportFlag) {
+                e.sender.hideColumn(5);
+                e.preventDefault();
+                exportFlag = true;
+                setTimeout(function () {
+                    e.sender.saveAsExcel();
+                });
+            } else {
+                e.sender.showColumn(5);
+                exportFlag = false;
+            }
+        }
+    </script>
+
+    @(
+    Html.Kendo().Grid<OnlineSpreadsheet.Web.ViewModels.Users.UserVM>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Template(t => { }).ClientTemplate("<input type='checkbox' class='checkbox' />").Width(15);
+            columns.Template(t => { }).ClientTemplate(" ").HtmlAttributes(new { @class = "text-center row-numbers" }).Title("#").Width(15);
+            columns.Bound(c => c.Name).Filterable(f => f.Multi(true).Search(true));
+            columns.Bound(c => c.Title).Filterable(true);
+            columns.Bound(c => c.Email).Filterable(f => f.Multi(true).Search(true));
+            columns.Bound(c => c.Phone).Filterable(f => f.Multi(true).Search(true));
+            columns.Bound(c => c.UserRoleName).Filterable(f => f.Multi(true).Search(true));
+            columns.Bound(c => c.EntityStatus)
+                .Filterable(f => f.Multi(true).Search(true))
+                .ClientTemplate("#=showStatus(EntityStatus)#")
+                .Width(50)
+                .HtmlAttributes(new { @class = "text-center" });
+            if (ViewBag.User.HasAccess(AccessRequest.UsersEdit))
+            {
+                columns.Bound(c => c.Id)
+                    .Title(string.Empty)
+                    .Filterable(false)
+                    .ClientTemplate("<a data-ajax='true' data-ajax-mode='replace' data-ajax-update='\\#modal-container' class='modal-link k-button' href='/Users/Edit?email=#=Email#'><i class='fa fa-lg fa-pencil'></i></a>")
+                    .Width(55);
+                columns.Command(command => command.Custom("Delete").Click("confirmDelete").Text("<i class='fa fa-lg fa fa-trash-o'></i>")).Width(60);
+            }
+        })
+        .Excel(e => e.Filterable(true).AllPages(true).FileName($"Users export {DateTime.Now}"))
+        .ToolBar(toolbar =>
+        {
+            if (ViewBag.User.HasAccess(AccessRequest.UsersEdit))
+            {
+                toolbar.Template(@<text>
+            <span class="grid-manage-label">@Resources.ManageUsers</span>
+            <div class="input-group grid-search">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" name="searchbox" class="form-control" id="searchbox" placeholder="@Resources.Search" />
+            </div>
+            <a data-ajax="true" data-ajax-mode="replace" data-ajax-update="#modal-container" class="modal-link k-button k-grid-add" href="/Users/Create"> @Resources.AddUser</a>
+            <a class="k-button k-button-icontext k-grid-delete-selection hide" href="/Users"><i class="fa fa-trash-o"></i> @Resources.DeleteSelection</a>
+                </text>);
+            }
+        })
+        .Pageable(p => p.PageSizes(new int[] { 10, 20, 50 }))
+        .Sortable(sortable =>
+        {
+            sortable.SortMode(GridSortMode.SingleColumn);
+        })
+        .Filterable(f => f.Extra(false))
+        .Events(e => e.ExcelExport("excelExport").DataBound("onDataBound"))
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .ServerOperation(false)
+            .PageSize(10)
+            .Model(model =>
+            {
+                model.Id(p => p.Id);
+            })
+            .Read(read => read.Action("Users_Read", "Users"))
+            .Destroy(destroy => destroy.Action("Users_Destroy", "Users"))
+        )
+    )
+
+    @Scripts.Render("~/bundles/usersIndex")
+    @Scripts.Render(Bundles.KendoPopupFunctionBindings)
+    @Scripts.Render(Bundles.MultipleDelete)
+}

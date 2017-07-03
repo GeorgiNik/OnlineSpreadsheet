@@ -16,6 +16,7 @@
     using OnlineSpreadsheet.Web.Application.Services;
     using OnlineSpreadsheet.Web.ViewModels.ProjectFiles;
     using Microsoft.AspNet.Identity;
+    using Telerik.Web.Spreadsheet;
 
     [AuthorizeUser(AccessRequest = AccessRequest.ProjectFilesEdit)]
     public class ProjectFilesController : BaseController
@@ -185,5 +186,29 @@
 
             return null;
         }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            return this.View("_Edit", id);
+        }
+
+        [HttpGet]
+        public ActionResult GetSpreadsheet(int id)
+        {
+            var file = this.projectFilesService.GetFile(id);
+            var fileName = file.Name;
+            var folderName = this.projectFilesService.GetFolder(file.FolderID)?.Name;
+            var physicalPath = Path.Combine(this.Server.MapPath(this.directory), folderName, fileName);
+
+            if (System.IO.File.Exists(physicalPath))
+            {
+                var workbook = Workbook.Load(physicalPath);
+                return this.Content(workbook.ToJson(), Telerik.Web.Spreadsheet.MimeTypes.JSON);
+            }
+
+            return this.Content("");
+        }
+
     }
 }

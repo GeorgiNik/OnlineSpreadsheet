@@ -1,0 +1,90 @@
+﻿@orange: #ea5e35;
+@background-dark: #eaecef;
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../Fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+p {
+    clear: both;
+    min-height: 1em;
+    margin: 0;
+    min-height: 10px;
+}
+
+.client-info-table {
+    font-family: Roboto-Regular;
+    width: 650px;
+    max-width: 650px;
+
+    thead {
+        background-color: #E7E6E6;
+        font-weight: bold;
+    }
+
+    tbody {
+        tr.even {
+            background-color: #F0FAFF;
+        }
+
+        td.title {
+            color: #3399CC;
+            border-bottom: 1px solid #E7E6E6;
+            border-top: 1px solid #E7E6E6;
+            font-weight: bold;
+        }
+
+        td.description {
+            border-bottom: 1px solid #E7E6E6;
+            border-top: 1px solid #E7E6E6;
+            border-left: 1px solid #E7E6E6;
+        }
+    }
+}
+
+.btn-orange {
+    background: @orange;
+    color: white;
+    border: 1px solid @orange;
+    min-width: 120px;
+    outline: none;
+
+    a {
+        color: white;
+    }
+
+    &:hover {
+        border: 1px solid @orange;
+    }
+}
+
+.invite-footer {
+    background-color: @background-dark;
+
+    td {
+        height: 100px;
+    }
+
+    div {
+        min-height: 100px;
+    }
+}
+
+.questionnaire-button {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #EA650D;
+    display: block;
+
+    a {
+        text-decoration: none;
+        width: 100%;
+        display: inline-block;
+        border-radius: 5px;
+
+        span {
+            color: white;
+        }
+    }
+}

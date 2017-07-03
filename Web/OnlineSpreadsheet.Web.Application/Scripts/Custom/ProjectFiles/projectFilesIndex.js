@@ -17,11 +17,6 @@ $(function () {
                         field: 'Name',
                         operator: 'contains',
                         value: val
-                    },
-                    {
-                        field: 'CountryName',
-                        operator: 'contains',
-                        value: val
                     }
                 ]
             });
@@ -29,7 +24,10 @@ $(function () {
     });
 
     $('#modal-container').on('hidden.bs.modal', function () {
-        $("#grid").data('kendoGrid').dataSource.read();
+        var grid = $('#grid').data("kendoGrid");
+        if (grid) {
+            grid.dataSource.read();
+        }
     });
 });
 

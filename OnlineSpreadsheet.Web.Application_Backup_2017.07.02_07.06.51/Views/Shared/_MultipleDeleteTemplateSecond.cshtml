@@ -1,0 +1,32 @@
+﻿<script type="text/x-kendo-template" id="multipleDeleteSecond">
+    <p>
+        @Resources.MultipleDeleteConfirmation
+    </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="text-right">
+        <button class="k-button" id="multipleCancelBtnSecond">@Resources.Cancel</button>
+        <button class="k-button k-primary" id="multipleDeleteBtnSecond">@Resources.Delete</button>
+    </div>
+</script>
+
+<script type="text/javascript">
+    function onDataBoundSecond() {
+        var view = this.dataSource.view();
+        for (var i = 0; i < view.length; i++) {
+            if ($.map(checkedItems, function (checkedItem) {
+                    return checkedItem.id;
+            }).includes(view[i].id)) {
+                this.tbody.find("tr[data-uid='" + view[i].uid + "']")
+                .addClass("k-state-selected")
+                .find(".checkbox-second")
+                .attr("checked", "checked");
+            }
+        }
+    }
+</script>

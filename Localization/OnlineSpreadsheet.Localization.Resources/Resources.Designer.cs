@@ -2464,6 +2464,15 @@ namespace OnlineSpreadsheet.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Only excel files are allowed with .xlsx extension.
+        /// </summary>
+        public static string ExcelFilesRequired {
+            get {
+                return ResourceManager.GetString("ExcelFilesRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export.
         /// </summary>
         public static string Export {

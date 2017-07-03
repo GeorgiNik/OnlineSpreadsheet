@@ -145,5 +145,10 @@
 
             this.projectFiles.SaveChanges();
         }
+
+        public int Count()
+        {
+            return this.projectFiles.Count(x => true);
+        }
     }
 }

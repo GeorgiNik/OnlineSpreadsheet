@@ -1,0 +1,25 @@
+﻿@model int
+<div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">@Resources.Export</h4>
+        </div>
+        <div class="modal-body">
+            <h3 class="no-data-error" style="display: none;">@Resources.NoData</h3>
+            @(Html.Kendo().Spreadsheet()
+            .Name("spreadsheet")
+            .HtmlAttributes(new { style = "width:100%;" })
+            )
+            <hr class="delimiter" />
+            <button type="button" class="btn btn-primary" data-dismiss="modal">@Resources.Close</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var spreadsheet = $("#spreadsheet").data("kendoSpreadsheet");
+        $.get( "/ProjectFiles/GetSpreadsheet",{id:@Model}, function( data ) {
+            spreadsheet.fromJSON(data);
+        });
+    });
+</script>

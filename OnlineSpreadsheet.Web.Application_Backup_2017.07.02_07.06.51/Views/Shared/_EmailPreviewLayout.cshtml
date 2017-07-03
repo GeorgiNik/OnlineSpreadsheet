@@ -1,0 +1,11 @@
+﻿<html>
+<head>
+    @Html.InlineStyles("~/Content/emails")
+    <!--[if gte mso 9]>
+        @Html.InlineStyles("~/Content/outlookSpecific")
+    <![endif]-->
+</head>
+<body>
+   @RenderBody()
+</body>
+</html>

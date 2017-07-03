@@ -126,6 +126,7 @@
     <Compile Include="Account\LoginViewModel.cs" />
     <Compile Include="ActionInformationVM.cs" />
     <Compile Include="Exports\ExcelExportVM.cs" />
+    <Compile Include="Home\HomeVM.cs" />
     <Compile Include="Infrastructure\AutoMapperConfig.cs" />
     <Compile Include="Infrastructure\ExportIgnoreAttribute.cs" />
     <Compile Include="Infrastructure\IHaveCustomMappings.cs" />
@@ -145,9 +146,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Home\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\PagedList.css" />
   </ItemGroup>

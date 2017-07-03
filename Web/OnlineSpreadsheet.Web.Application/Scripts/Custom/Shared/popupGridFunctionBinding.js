@@ -29,7 +29,10 @@
         });
 
         $('#modal-container').on('hide.bs.modal', function () {
-            $('#grid').data("kendoGrid").dataSource.read();
+            var grid = $('#grid').data("kendoGrid");
+            if (grid) {
+                grid.dataSource.read();
+            }
         });
     }
 });
