@@ -31,8 +31,6 @@
             return this.View(vm);
         }
 
-
-
         public ActionResult Users_Read([DataSourceRequest]DataSourceRequest request)
         {
             var result = this.users.GetAll().ToDataSourceResult(request);

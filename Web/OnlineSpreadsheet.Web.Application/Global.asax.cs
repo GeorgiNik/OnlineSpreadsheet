@@ -2,11 +2,14 @@
 {
     using ModelBinders;
     using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations.Infrastructure;
     using System.Globalization;
     using System.Threading;
     using System.Web.Mvc;
     using System.Web.Optimization;
     using System.Web.Routing;
+    using OnlineSpreadsheet.Data.Models;
     using ViewModels.Infrastructure;
 
     public class MvcApplication : System.Web.HttpApplication

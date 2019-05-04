@@ -25,31 +25,34 @@ namespace OnlineSpreadsheet.Data.Models.Migrations
 
         private void SeedRoles(ApplicationDbContext context)
         {
-            var admin = new UserRole
+            if (!context.UserRoles.Any())
             {
-                Name = "Administrator",
-                CreatedOn = DateTime.UtcNow
-            };
+                var admin = new UserRole
+                {
+                    Name = "Administrator",
+                    CreatedOn = DateTime.UtcNow
+                };
 
-            var globalReader = new UserRole()
-            {
-                Name = "Global Reader",
-                CreatedOn = DateTime.UtcNow,
-                ProjectFilesRead = true,
-                ProjectFilesEdit = true,
-            };
+                var globalReader = new UserRole()
+                {
+                    Name = "Global Reader",
+                    CreatedOn = DateTime.UtcNow,
+                    ProjectFilesRead = true,
+                    ProjectFilesEdit = true,
+                };
 
-            foreach (var field in admin.GetType().GetProperties().Where(x => x.PropertyType == false.GetType()))
-            {
-                field.SetValue(admin, true, null);
+                foreach (var field in admin.GetType().GetProperties().Where(x => x.PropertyType == false.GetType()))
+                {
+                    field.SetValue(admin, true, null);
+                }
+
+                admin.IsDeleted = false;
+
+                var roles = new List<UserRole> { admin, globalReader };
+
+                roles.ForEach(entry => context.UserRoles.AddOrUpdate(x => x.Name, entry));
+                context.SaveChanges();
             }
-
-            admin.IsDeleted = false;
-
-            var roles = new List<UserRole> { admin, globalReader };
-
-            roles.ForEach(entry => context.UserRoles.AddOrUpdate(x => x.Name, entry));
-            context.SaveChanges();
         }
     }
 }

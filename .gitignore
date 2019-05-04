@@ -196,3 +196,5 @@ FakesAssemblies/
 *.opt
 ExcelExports
 
+
+\.idea/

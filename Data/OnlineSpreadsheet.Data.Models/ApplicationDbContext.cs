@@ -11,7 +11,11 @@
         public ApplicationDbContext()
                 : base("DefaultConnection", false)
         {
+            Database.SetInitializer(
+                new MigrateDatabaseToLatestVersion<ApplicationDbContext, OnlineSpreadsheet.Data.Models.Migrations.Configuration>()
+            );
         }
+        
         public IDbSet<EmailFailureLog> EmailFailureLogs { get; set; }
 
         public IDbSet<EmailSuccessLog> EmailSuccessLogs { get; set; }

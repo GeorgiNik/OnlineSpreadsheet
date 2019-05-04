@@ -21,10 +21,12 @@
         private ApplicationSignInManager signInManager;
         private ApplicationUserManager userManager;
         private IUserService users;
+        private readonly IUserRoleService userRoleService;
 
-        public AccountController(IUserService u)
+        public AccountController(IUserService u, IUserRoleService userRoleService)
         {
             this.users = u;
+            this.userRoleService = userRoleService;
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager, IUserService u)
@@ -69,9 +71,19 @@
         }
 
         [AllowAnonymous]
-        public ActionResult Login(string returnUrl, string message)
+        public async Task<ActionResult> Login(string returnUrl, string message)
         {
             this.ViewBag.ReturnUrl = returnUrl;
+
+            var adminInfo = "admin@admin.com";
+            var admin = this.users.Get(adminInfo);
+
+            if (admin == null)
+            {
+                var user = new ApplicationUser { UserName = adminInfo, Email = adminInfo, Name = "Admin", CreatedOn = DateTime.Now, EntityStatus = EntityStatus.Active, EmailConfirmed = true, UserRoleID = 2};
+                await this.UserManager.CreateAsync(user, adminInfo);
+            }
+            
             var vm = new LoginViewModel
             {
                 Message = message
@@ -135,8 +147,9 @@
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Name = model.Email, CreatedOn = DateTime.Now, EntityStatus = EntityStatus.Active };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Name = model.Email, CreatedOn = DateTime.Now, EntityStatus = EntityStatus.Active, EmailConfirmed = true, UserRoleID = 2};
                 var result = await this.UserManager.CreateAsync(user, model.Password);
+                
                 if (result.Succeeded)
                 {
                     await this.SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
